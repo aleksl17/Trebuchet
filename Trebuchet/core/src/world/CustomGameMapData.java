@@ -13,7 +13,6 @@ public class CustomGameMapData extends gamemap {
     String name;
     int[][][] map;
 
-    private SpriteBatch batch;
     private TextureRegion[][] tiles;
 
     public CustomGameMapData(){
@@ -22,12 +21,12 @@ public class CustomGameMapData extends gamemap {
         this.name = data.name;
         this.map = data.map;
 
-        batch = new SpriteBatch();
+
         tiles = TextureRegion.split(new Texture("tiles.png"), TileType.TILE_SIZE, TileType.TILE_SIZE);
     }
 
     @Override
-    public void render(OrthographicCamera camera) {
+    public void render(OrthographicCamera camera, SpriteBatch batch) {
         batch.setProjectionMatrix(camera.combined);
         batch.begin();
 
@@ -41,17 +40,19 @@ public class CustomGameMapData extends gamemap {
                 }
             }
         }
+        super.render(camera, batch);
         batch.end();
+
     }
 
     @Override
     public void update(float delta) {
-
+        super.update(delta);
     }
 
     @Override
     public void dispose() {
-        batch.dispose();
+
     }
 
     @Override

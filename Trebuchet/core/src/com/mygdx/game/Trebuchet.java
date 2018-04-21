@@ -12,40 +12,40 @@ import world.gamemap;
 
 
 public class Trebuchet extends ApplicationAdapter {
-	OrthographicCamera cam;
-	SpriteBatch batch;
+    OrthographicCamera cam;
+    SpriteBatch batch;
 
 
-	gamemap gameMap;
-	
-	@Override
-	public void create () {
-		batch = new SpriteBatch();
+    gamemap gameMap;
+    float deltaX, deltaY;
 
-		gameMap = new TiledGameMap();
-		cam = new OrthographicCamera();
-		cam.setToOrtho(false, Gdx.graphics.getWidth(), Gdx.graphics.getHeight());
-		cam.update();
+    @Override
+    public void create() {
+        batch = new SpriteBatch();
 
-		gameMap = new CustomGameMapData();
-	}
+        float w = Gdx.graphics.getWidth();
+        float h = Gdx.graphics.getHeight();
 
-	@Override
-	public void render () {
-		Gdx.gl.glClearColor(0, 0, 0, 1);
-		Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
+        cam = new OrthographicCamera();
+        cam.setToOrtho(false, w, h);
+        cam.update();
 
-		if(Gdx.input.isTouched()){
-			cam.translate(-Gdx.input.getDeltaX(),Gdx.input.getDeltaY());
-			cam.update();
-		}
+        gameMap = new CustomGameMapData();
+    }
 
+    @Override
+    public void render() {
+        Gdx.gl.glClearColor(0, 0, 0, 1);
+        Gdx.gl.glBlendFunc(GL20.GL_SRC_ALPHA, GL20.GL_ONE_MINUS_SRC_ALPHA);
+        Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
 
-		gameMap.render(cam);
-	}
-	
-	@Override
-	public void dispose () {
-		batch.dispose();
-	}
+        cam.update();
+        gameMap.update(Gdx.graphics.getDeltaTime());
+        gameMap.render(cam, batch);
+    }
+
+    @Override
+    public void dispose() {
+        batch.dispose();
+    }
 }

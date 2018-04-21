@@ -1,6 +1,7 @@
 package world;
 
 import com.badlogic.gdx.graphics.OrthographicCamera;
+import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.maps.tiled.TiledMap;
 import com.badlogic.gdx.maps.tiled.TiledMapTile;
 import com.badlogic.gdx.maps.tiled.TiledMapTileLayer;
@@ -17,15 +18,20 @@ public class TiledGameMap extends gamemap {
         tiledMapRenderer = new OrthogonalTiledMapRenderer(tiledMap);
     }
 
-    @Override
-    public void render(OrthographicCamera camera) {
+
+    public void render(OrthographicCamera camera, SpriteBatch batch) {
         tiledMapRenderer.setView(camera);
         tiledMapRenderer.render();
+
+        batch.setProjectionMatrix(camera.combined);
+        batch.begin();
+        super.render(camera, batch);
+        batch.end();
     }
 
     @Override
     public void update(float delta) {
-
+        super.update(delta);
     }
 
     @Override
