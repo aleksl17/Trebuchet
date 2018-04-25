@@ -5,8 +5,6 @@ import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
-import world.CustomGameMapData;
-import world.TileType;
 import world.TiledGameMap;
 import world.gamemap;
 
@@ -27,10 +25,10 @@ public class Trebuchet extends ApplicationAdapter {
         float h = Gdx.graphics.getHeight();
 
         cam = new OrthographicCamera();
-        cam.setToOrtho(false, w, h);
+        cam.setToOrtho(false, w*2, h*2);
         cam.update();
 
-        gameMap = new CustomGameMapData();
+        gameMap = new TiledGameMap();
     }
 
     @Override

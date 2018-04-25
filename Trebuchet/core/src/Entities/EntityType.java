@@ -10,7 +10,7 @@ import java.util.HashMap;
 @SuppressWarnings("rawtypes")
 public enum EntityType {
 
-    PLAYER("player", Player.class, 14, 32, 40);
+    PLAYER("player", Player.class, 32, 32, 40);
 
     private String id;
     private Class loaderClass;
