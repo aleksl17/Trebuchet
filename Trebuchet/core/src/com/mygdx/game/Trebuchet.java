@@ -47,5 +47,6 @@ public class Trebuchet extends ApplicationAdapter {
     @Override
     public void dispose() {
         batch.dispose();
+        gameMap.dispose();
     }
 }

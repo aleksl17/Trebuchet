@@ -8,15 +8,15 @@ import world.gamemap;
 
 public class Player extends Entity {
 
-    private static final int SPEED = 160;
+    private static final int SPEED = 80;
     private static final int JUMP_VELOCITY = 5;
 
     Texture image;
 
-    public Player(float x, float y, gamemap map) {
-        super(x, y, EntityType.PLAYER, map);
+    @Override
+    public void create(EntitySnapshot snapshot, EntityType type, gamemap map) {
+        super.create(snapshot, type, map);
         image = new Texture("player.png");
-
     }
 
     @Override
@@ -41,4 +41,9 @@ public class Player extends Entity {
         batch.draw(image, pos.x, pos.y, getWidth(), getHeight());
     }
 
+    @Override
+    public EntitySnapshot getSaveSnapshot() {
+        EntitySnapshot snapshot = super.getSaveSnapshot();
+        return snapshot;
+    }
 }

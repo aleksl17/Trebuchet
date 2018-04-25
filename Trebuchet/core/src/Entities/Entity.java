@@ -12,8 +12,8 @@ public abstract class Entity {
     protected gamemap map;
     protected boolean grounded = false;
 
-    public Entity(float x, float y, EntityType type, gamemap map) {
-        this.pos = new Vector2(x,y);
+    public void create (EntitySnapshot snapshot, EntityType type, gamemap map){
+        this.pos = new Vector2(snapshot.getX(),snapshot.getY());
         this.type = type;
         this.map = map;
     }
@@ -42,6 +42,10 @@ public abstract class Entity {
         float newX = pos.x + amount;
         if (!map.doesRectCollideWithMap(newX, pos.y, getWidth(), getHeight()))
             this.pos.x = newX;
+    }
+
+    public EntitySnapshot getSaveSnapshot(){
+        return new EntitySnapshot(type.getId(), pos.x, pos.y);
     }
 
     public Vector2 getPos() {
