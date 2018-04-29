@@ -12,11 +12,12 @@ public abstract class Entity {
     protected gamemap map;
     protected boolean grounded = false;
 
-    public void create (EntitySnapshot snapshot, EntityType type, gamemap map){
-        this.pos = new Vector2(snapshot.getX(),snapshot.getY());
+    public Entity(float x, float y, EntityType type, gamemap map) {
+        this.pos = new Vector2(x, y);
         this.type = type;
         this.map = map;
     }
+
 
     public void update (float deltaTime, float gravity){
         float newY = pos.y;
@@ -44,29 +45,6 @@ public abstract class Entity {
             this.pos.x = newX;
     }
 
-    public EntitySnapshot getSaveSnapshot(){
-        return new EntitySnapshot(type.getId(), pos.x, pos.y);
-    }
-
-    public Vector2 getPos() {
-        return pos;
-    }
-
-    public float getX (){
-        return pos.x;
-    }
-
-    public float getY (){
-        return pos.y;
-    }
-
-    public EntityType getType() {
-        return type;
-    }
-
-    public boolean isGrounded() {
-        return grounded;
-    }
 
     public int getWidth(){
         return type.getWidth();

@@ -13,27 +13,30 @@ public class Player extends Entity {
 
     Texture image;
 
-    @Override
-    public void create(EntitySnapshot snapshot, EntityType type, gamemap map) {
-        super.create(snapshot, type, map);
+    public Player (float x, float y, gamemap map) {
+        super(x, y, EntityType.PLAYER, map);
         image = new Texture("player.png");
     }
 
     @Override
     public void update(float deltaTime, float gravity) {
-        if (Gdx.input.isKeyPressed(Keys.SPACE) && grounded) {
+        if (Gdx.input.isKeyPressed(Keys.UP) && grounded) {
             this.velocityY += JUMP_VELOCITY * getWeight();
         }
-        else if (Gdx.input.isKeyPressed(Keys.SPACE) && !grounded && this.velocityY > 0)
+        else if (Gdx.input.isKeyPressed(Keys.UP) && !grounded && this.velocityY > 0)
             this.velocityY += JUMP_VELOCITY * getWeight() * deltaTime;
 
         super.update(deltaTime, gravity);
 
-        if (Gdx.input.isKeyPressed(Keys.LEFT))
+        if (Gdx.input.isKeyPressed(Keys.LEFT)) {
             moveX(-SPEED * deltaTime);
+            image = new Texture("player1.png");
+        }
 
-        if (Gdx.input.isKeyPressed(Keys.RIGHT))
+        if (Gdx.input.isKeyPressed(Keys.RIGHT)) {
             moveX(SPEED * deltaTime);
+            image = new Texture("player.png");
+        }
     }
 
     @Override
@@ -41,9 +44,4 @@ public class Player extends Entity {
         batch.draw(image, pos.x, pos.y, getWidth(), getHeight());
     }
 
-    @Override
-    public EntitySnapshot getSaveSnapshot() {
-        EntitySnapshot snapshot = super.getSaveSnapshot();
-        return snapshot;
-    }
 }
