@@ -17,15 +17,21 @@ public class mainMenu implements Screen {
     private static final int x = TrebuchetGame.WIDTH / 2 - exitwidth / 2;
     private static final int y = TrebuchetGame.HEIGHT;
 
+    private boolean animasjon = true;
+    private int tid = 100;
+
     TrebuchetGame game;
 
+    Texture head;
     Texture playButtonActive;
     Texture playButtonInactive;
     Texture exitButtonActive;
     Texture exitButtonInactive;
+    Texture mainplayer;
 
     public mainMenu (TrebuchetGame game){
         this.game = game;
+        head = new Texture("head.png");
         playButtonActive = new Texture("playButtonActive.png");
         playButtonInactive = new Texture("playButtonInactive.png");
         exitButtonActive = new Texture("exitButtonActive.png");
@@ -44,6 +50,22 @@ public class mainMenu implements Screen {
         Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
         game.batch.begin();
 
+        game.batch.draw(head,280,400,800,200);
+        if (tid == 100) {
+            if (animasjon == true) {
+                mainplayer = new Texture("player.png");
+                animasjon = false;
+            } else {
+                mainplayer = new Texture("player1.png");
+                animasjon = true;
+            }
+            tid = 0;
+        }
+        tid += 1;
+        game.batch.draw(mainplayer,180,200,200,200);
+
+
+        game.dispose();
         if(Gdx.input.getX() > x && Gdx.input.getX() < x + playwidth && Gdx.input.getY() > y - playy - playheight && Gdx.input.getY() < y - playy) {
             game.batch.draw(playButtonActive, x, playy, playwidth, playheight);
             if (Gdx.input.isTouched()){
