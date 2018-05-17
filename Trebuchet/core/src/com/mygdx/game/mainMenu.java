@@ -53,10 +53,10 @@ public class mainMenu implements Screen {
         game.batch.draw(head,280,400,800,200);
         if (tid == 100) {
             if (animasjon == true) {
-                mainplayer = new Texture("player.png");
+                mainplayer = new Texture("playerRollRight.png");
                 animasjon = false;
             } else {
-                mainplayer = new Texture("player1.png");
+                mainplayer = new Texture("playerRollRight1.png");
                 animasjon = true;
             }
             tid = 0;

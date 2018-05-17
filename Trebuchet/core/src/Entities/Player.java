@@ -10,12 +10,13 @@ public class Player extends Entity {
 
     private static final int SPEED = 80;
     private static final int JUMP_VELOCITY = 5;
+    int rollR = 0;
 
     public static Texture image;
 
     public Player (float x, float y, gamemap map) {
         super(x, y, EntityType.PLAYER, map);
-        image = new Texture("player.png");
+        image = new Texture("playerRollRight.png");
     }
 
     @Override
@@ -30,12 +31,26 @@ public class Player extends Entity {
 
         if (Gdx.input.isKeyPressed(Keys.LEFT)) {
             moveX(-SPEED * deltaTime);
-            image = new Texture("player1.png");
+
+            if (rollR > 10){
+                image = new Texture("playerRollLeft.png");
+            }else {
+                image = new Texture("playerRollLeft1.png");
+            }
+            rollR += 1;
+            if (rollR == 20){rollR = 0;}
         }
 
         if (Gdx.input.isKeyPressed(Keys.RIGHT)) {
             moveX(SPEED * deltaTime);
-            image = new Texture("player.png");
+
+            if (rollR > 10){
+                image = new Texture("playerRollRight.png");
+            }else {
+                image = new Texture("playerRollRight1.png");
+            }
+            rollR += 1;
+            if (rollR == 20){rollR = 0;}
         }
     }
 
