@@ -6,7 +6,6 @@ import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import world.TiledGameMap;
-import world.TiledGameMap2;
 import world.gamemap;
 
 import static Entities.Player.map1;
@@ -45,10 +44,15 @@ batch = new SpriteBatch();
         Gdx.gl.glBlendFunc(GL20.GL_SRC_ALPHA, GL20.GL_ONE_MINUS_SRC_ALPHA);
         Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
 
-        if (map1 == 1){
-            gameMap = new TiledGameMap2();
+        if(map1 == 1){
+            gameMap = new TiledGameMap();
             map1 = 2;
         }
+        if(map1 == 3){
+            gameMap = new TiledGameMap();
+            map1 = 4;
+        }
+
         cam.update();
         gameMap.update(Gdx.graphics.getDeltaTime());
         gameMap.render(cam, batch);

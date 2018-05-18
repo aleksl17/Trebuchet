@@ -7,6 +7,9 @@ import com.badlogic.gdx.maps.tiled.TiledMapTile;
 import com.badlogic.gdx.maps.tiled.TiledMapTileLayer;
 import com.badlogic.gdx.maps.tiled.TmxMapLoader;
 import com.badlogic.gdx.maps.tiled.renderers.OrthogonalTiledMapRenderer;
+import com.mygdx.game.mainMenu;
+
+import static Entities.Player.map1;
 
 public class TiledGameMap extends gamemap {
 
@@ -15,6 +18,13 @@ public class TiledGameMap extends gamemap {
 
     public TiledGameMap(){
         tiledMap = new TmxMapLoader().load("map.tmx");
+        if (map1 == 1){
+            tiledMap = new TmxMapLoader().load("map1.tmx");
+        }
+        if (map1 == 3){
+            tiledMap = new TmxMapLoader().load("map2.tmx");
+        }
+
         tiledMapRenderer = new OrthogonalTiledMapRenderer(tiledMap);
     }
 

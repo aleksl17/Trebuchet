@@ -4,6 +4,7 @@ import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Input.Keys;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+import world.TiledGameMap;
 import world.gamemap;
 
 import static com.badlogic.gdx.scenes.scene2d.actions.Actions.show;
@@ -33,7 +34,7 @@ public class Player extends Entity {
         super.update(deltaTime, gravity);
 
         if (Gdx.input.isKeyPressed(Keys.LEFT)) {
-            moveX(-SPEED * deltaTime);
+            moveX(-SPEED * deltaTime *4);
 
             if (roll > 10){
                 image = new Texture("playerRollLeft.png");
@@ -45,7 +46,7 @@ public class Player extends Entity {
         }
 
         if (Gdx.input.isKeyPressed(Keys.RIGHT)) {
-            moveX(SPEED * deltaTime);
+            moveX(SPEED * deltaTime *4);
 
             if (roll > 10){
                 image = new Texture("playerRollRight.png");
@@ -61,8 +62,12 @@ public class Player extends Entity {
     public void render(SpriteBatch batch) {
         batch.draw(image, pos.x, pos.y, getWidth(), getHeight());
         if(pos.x > 1280){
-            map1 = 1;
-            show();
+            if (map1 == 2){
+                map1 = 3;
+            }else if(map1 == 4){
+                map1 = 5;
+            }
+            else{map1 = 1;}
 
         }
 
