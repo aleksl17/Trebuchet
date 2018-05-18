@@ -8,13 +8,14 @@ import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 
 import java.util.ArrayList;
 
+
 public abstract class gamemap {
 
     protected ArrayList<Entity> entities;
 
     public gamemap() {
         entities = new ArrayList<Entity>();
-        entities.add(new Player(40, 500, this));
+        entities.add(new Player(1, 340, this));
     }
 
     public void render(OrthographicCamera camera, SpriteBatch batch){

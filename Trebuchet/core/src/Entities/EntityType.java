@@ -3,7 +3,7 @@ package Entities;
 @SuppressWarnings("rawtypes")
 public enum EntityType {
 
-    PLAYER("player", Player.class, 32, 32, 40);
+    PLAYER("player", Player.class, 26, 26, 40);
 
     private String id;
     private Class loaderClass;

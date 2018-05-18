@@ -6,11 +6,14 @@ import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import world.gamemap;
 
+import static com.badlogic.gdx.scenes.scene2d.actions.Actions.show;
+
 public class Player extends Entity {
 
     private static final int SPEED = 80;
     private static final int JUMP_VELOCITY = 5;
-    int rollR = 0;
+    int roll = 0;
+    public static int map1;
 
     public static Texture image;
 
@@ -32,31 +35,36 @@ public class Player extends Entity {
         if (Gdx.input.isKeyPressed(Keys.LEFT)) {
             moveX(-SPEED * deltaTime);
 
-            if (rollR > 10){
+            if (roll > 10){
                 image = new Texture("playerRollLeft.png");
             }else {
                 image = new Texture("playerRollLeft1.png");
             }
-            rollR += 1;
-            if (rollR == 20){rollR = 0;}
+            roll += 1;
+            if (roll == 20){roll = 0;}
         }
 
         if (Gdx.input.isKeyPressed(Keys.RIGHT)) {
             moveX(SPEED * deltaTime);
 
-            if (rollR > 10){
+            if (roll > 10){
                 image = new Texture("playerRollRight.png");
             }else {
                 image = new Texture("playerRollRight1.png");
             }
-            rollR += 1;
-            if (rollR == 20){rollR = 0;}
+            roll += 1;
+            if (roll == 20){roll = 0;}
         }
     }
 
     @Override
     public void render(SpriteBatch batch) {
         batch.draw(image, pos.x, pos.y, getWidth(), getHeight());
+        if(pos.x > 1280){
+            map1 = 1;
+            show();
+
+        }
 
     }
 
