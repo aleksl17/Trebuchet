@@ -5,19 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9e6295b2-49b3-4570-844e-93e66c6a1335" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/core/assets/map2.tmx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/com/mygdx/game/GameEnd.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/com/mygdx/game/Dead.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/out/production/classes/Entities/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/out/production/classes/Entities/Player.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/out/production/classes/com/mygdx/game/Trebuchet.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/out/production/classes/com/mygdx/game/Trebuchet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/out/production/classes/com/mygdx/game/TrebuchetGame.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/out/production/classes/com/mygdx/game/TrebuchetGame.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/out/production/classes/world/TiledGameMap.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/out/production/classes/world/TiledGameMap.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/out/production/classes/world/TiledGameMap2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/Entities/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/Entities/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/com/mygdx/game/Trebuchet.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/com/mygdx/game/Trebuchet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/com/mygdx/game/TrebuchetGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/com/mygdx/game/TrebuchetGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/world/TiledGameMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/world/TiledGameMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/world/TiledGameMap2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/out/production/classes/world/gamemap.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/out/production/classes/world/gamemap.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/world/gamemap.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/world/gamemap.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -44,8 +35,8 @@
       <file leaf-file-name="TrebuchetGame.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/TrebuchetGame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="26" column="23" lean-forward="true" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
+            <state relative-caret-position="345">
+              <caret line="26" column="23" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -56,7 +47,7 @@
       <file leaf-file-name="Trebuchet.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/Trebuchet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="354">
+            <state relative-caret-position="660">
               <caret line="54" selection-start-line="54" selection-end-line="54" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -65,13 +56,30 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="gamemap.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="gamemap.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/core/src/world/gamemap.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" column="9" lean-forward="true" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
+            <state relative-caret-position="1035">
+              <caret line="69" column="5" lean-forward="true" selection-start-line="69" selection-start-column="5" selection-end-line="69" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1701#1702#0" expanded="true" />
+                <element signature="e#1760#1761#0" expanded="true" />
+                <element signature="e#1794#1795#0" expanded="true" />
+                <element signature="e#1854#1855#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Dead.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/Dead.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="56" selection-start-line="7" selection-start-column="56" selection-end-line="7" selection-end-column="56" />
+              <folding>
+                <element signature="e#96#97#0" expanded="true" />
+                <element signature="e#122#123#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -80,18 +88,10 @@
       <file leaf-file-name="TiledGameMap.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/src/world/TiledGameMap.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
+            <state relative-caret-position="255">
               <caret line="26" selection-start-line="26" selection-end-line="26" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1068#1069#0" expanded="true" />
-                <element signature="e#1103#1104#0" expanded="true" />
-                <element signature="e#1146#1147#0" expanded="true" />
-                <element signature="e#1180#1181#0" expanded="true" />
-                <element signature="e#1803#1804#0" expanded="true" />
-                <element signature="e#1887#1888#0" expanded="true" />
-                <element signature="e#1931#1932#0" expanded="true" />
-                <element signature="e#1985#1986#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -100,7 +100,7 @@
       <file leaf-file-name="Player.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/src/Entities/Player.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-171">
+            <state relative-caret-position="435">
               <caret line="36" column="39" selection-start-line="36" selection-start-column="39" selection-end-line="36" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -112,8 +112,8 @@
       <file leaf-file-name="map2.tmx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/assets/map2.tmx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-12">
-              <caret line="88" column="94" lean-forward="true" selection-start-line="88" selection-start-column="94" selection-end-line="88" selection-end-column="94" />
+            <state relative-caret-position="1320">
+              <caret line="88" column="94" selection-start-line="88" selection-start-column="94" selection-end-line="88" selection-end-column="94" />
             </state>
           </provider>
         </entry>
@@ -121,26 +121,17 @@
       <file leaf-file-name="map.tmx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/assets/map.tmx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="109" column="19" lean-forward="true" selection-end-line="114" />
+            <state relative-caret-position="1635">
+              <caret line="109" column="19" selection-end-line="114" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="map1.tmx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/assets/map1.tmx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1938">
-              <caret line="114" lean-forward="true" selection-start-line="114" selection-end-line="114" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mainMenu.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="mainMenu.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/mainMenu.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="58" column="62" selection-start-line="58" selection-start-column="62" selection-end-line="58" selection-end-column="62" />
+            <state relative-caret-position="330">
+              <caret line="22" column="23" lean-forward="true" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -151,7 +142,7 @@
       <file leaf-file-name="GameEnd.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/GameEnd.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
+            <state relative-caret-position="105">
               <caret line="7" selection-start-line="7" selection-end-line="7" />
             </state>
           </provider>
@@ -763,7 +754,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="10677655268460" />
+        <entry key="$PROJECT_DIR$" value="10685274432000" />
         <entry key="$PROJECT_DIR$/.gradle" value="0" />
         <entry key="$PROJECT_DIR$/build.gradle" value="870102429" />
         <entry key="$PROJECT_DIR$/core/build.gradle" value="2971590108" />
@@ -962,8 +953,8 @@
     </option>
     <option name="projectSyncType">
       <map>
-        <entry key="$PROJECT_DIR$" value="RE_IMPORT" />
         <entry key="$USER_HOME$/Downloads/test" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$" value="RE_IMPORT" />
       </map>
     </option>
   </component>
@@ -988,13 +979,14 @@
         <option value="$PROJECT_DIR$/desktop/src/com/mygdx/game/desktop/DesktopLauncher.java" />
         <option value="$PROJECT_DIR$/core/src/world/TiledGameMap2.java" />
         <option value="$PROJECT_DIR$/core/src/world/TileType.java" />
-        <option value="$PROJECT_DIR$/core/src/world/gamemap.java" />
         <option value="$PROJECT_DIR$/core/assets/map2.tmx" />
         <option value="$PROJECT_DIR$/core/src/com/mygdx/game/GameEnd.java" />
         <option value="$PROJECT_DIR$/core/src/world/TiledGameMap.java" />
         <option value="$PROJECT_DIR$/core/src/com/mygdx/game/Trebuchet.java" />
         <option value="$PROJECT_DIR$/core/src/com/mygdx/game/TrebuchetGame.java" />
         <option value="$PROJECT_DIR$/core/src/Entities/Player.java" />
+        <option value="$PROJECT_DIR$/core/src/com/mygdx/game/Dead.java" />
+        <option value="$PROJECT_DIR$/core/src/world/gamemap.java" />
       </list>
     </option>
   </component>
@@ -1007,10 +999,10 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1135" />
-    <option name="width" value="795" />
-    <option name="height" value="1050" />
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="877" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -1020,8 +1012,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
@@ -1090,6 +1080,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1216,46 +1208,48 @@
       <workItem from="1526468639972" duration="1499000" />
       <workItem from="1526563709576" duration="4025000" />
       <workItem from="1526642543205" duration="10998000" />
+      <workItem from="1526654298152" duration="599000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="87563000" />
+    <option name="totallyTimeSpent" value="88162000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="0" y="23" width="1440" height="877" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.24" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.23910336" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50073206" side_tool="true" weight="0.3290938" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32503113" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32897604" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32551724" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14778645" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14722222" />
       <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32965517" />
+      <window_info id="Learn" />
       <window_info anchor="right" id="Gradle" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Build" order="7" sideWeight="0.49926794" weight="0.32827586" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32965517" />
     </layout>
     <layout-to-restore>
       <window_info anchor="bottom" id="Build" order="7" sideWeight="0.49926794" weight="0.32827586" />
@@ -1274,6 +1268,7 @@
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50073206" side_tool="true" weight="0.3290938" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.24074075" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="12" weight="0.32897604" />
       <window_info anchor="right" id="Maven Projects" order="5" />
@@ -1286,7 +1281,6 @@
       <window_info anchor="right" id="Theme Preview" order="9" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
     </layout-to-restore>
   </component>
@@ -1297,7 +1291,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/core/src/world/CustomGameMapData.java" />
     <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/Trebuchet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -1452,9 +1445,7 @@
     <entry file="file://$PROJECT_DIR$/core/assets/head.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/assets/maps/basic.map">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/core/assets/maps/basic.map" />
     <entry file="file://$PROJECT_DIR$/desktop/src/com/mygdx/game/desktop/DesktopLauncher.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -1474,44 +1465,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/core/assets/map1.tmx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1938">
-          <caret line="114" lean-forward="true" selection-start-line="114" selection-end-line="114" />
+        <state relative-caret-position="1710">
+          <caret line="114" selection-start-line="114" selection-end-line="114" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/world/TiledGameMap2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1006#1007#0" expanded="true" />
-            <element signature="e#1041#1042#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/world/TiledGameMap2.java" />
     <entry file="file://$PROJECT_DIR$/core/assets/map.tmx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="109" column="19" lean-forward="true" selection-end-line="114" />
+        <state relative-caret-position="1635">
+          <caret line="109" column="19" selection-end-line="114" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/core/assets/map2.tmx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-12">
-          <caret line="88" column="94" lean-forward="true" selection-start-line="88" selection-start-column="94" selection-end-line="88" selection-end-column="94" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/world/gamemap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="9" lean-forward="true" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="1320">
+          <caret line="88" column="94" selection-start-line="88" selection-start-column="94" selection-end-line="88" selection-end-column="94" />
         </state>
       </provider>
     </entry>
@@ -1524,25 +1494,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/core/src/world/TiledGameMap.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
+        <state relative-caret-position="255">
           <caret line="26" selection-start-line="26" selection-end-line="26" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1068#1069#0" expanded="true" />
-            <element signature="e#1103#1104#0" expanded="true" />
-            <element signature="e#1146#1147#0" expanded="true" />
-            <element signature="e#1180#1181#0" expanded="true" />
-            <element signature="e#1803#1804#0" expanded="true" />
-            <element signature="e#1887#1888#0" expanded="true" />
-            <element signature="e#1931#1932#0" expanded="true" />
-            <element signature="e#1985#1986#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/Trebuchet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
+        <state relative-caret-position="660">
           <caret line="54" selection-start-line="54" selection-end-line="54" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1552,8 +1514,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/TrebuchetGame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="26" column="23" lean-forward="true" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
+        <state relative-caret-position="345">
+          <caret line="26" column="23" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1562,7 +1524,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/core/src/Entities/Player.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-171">
+        <state relative-caret-position="435">
           <caret line="36" column="39" selection-start-line="36" selection-start-column="39" selection-end-line="36" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1572,17 +1534,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/GameEnd.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
+        <state relative-caret-position="105">
           <caret line="7" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/mainMenu.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="58" column="62" selection-start-line="58" selection-start-column="62" selection-end-line="58" selection-end-column="62" />
+        <state relative-caret-position="330">
+          <caret line="22" column="23" lean-forward="true" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/Dead.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="56" selection-start-line="7" selection-start-column="56" selection-end-line="7" selection-end-column="56" />
+          <folding>
+            <element signature="e#96#97#0" expanded="true" />
+            <element signature="e#122#123#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/world/gamemap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1035">
+          <caret line="69" column="5" lean-forward="true" selection-start-line="69" selection-start-column="5" selection-end-line="69" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1701#1702#0" expanded="true" />
+            <element signature="e#1760#1761#0" expanded="true" />
+            <element signature="e#1794#1795#0" expanded="true" />
+            <element signature="e#1854#1855#0" expanded="true" />
           </folding>
         </state>
       </provider>

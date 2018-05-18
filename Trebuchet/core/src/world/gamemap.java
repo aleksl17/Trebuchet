@@ -4,12 +4,14 @@ import Entities.Entity;
 import Entities.Player;
 import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+import com.mygdx.game.Dead;
 
 
 import java.util.ArrayList;
 
 
 public abstract class gamemap {
+    Dead d = new Dead();
 
     protected ArrayList<Entity> entities;
 
@@ -44,8 +46,11 @@ public abstract class gamemap {
             for (int col = (int) (x / TileType.TILE_SIZE); col < Math.ceil((x + width) / TileType.TILE_SIZE); col++){
                 for (int layer = 0; layer < getLayers(); layer++){
                     TileType type = getTileTypeByCoordinate(layer, col, row);
-                    if (type != null && type.isCollidable())
-                        return true;
+                    if (type != null && type.isCollidable()){
+                        return true;}
+                        else if (type != null && type.getId() == 4){
+                        d.death();
+                    }
                 }
             }
         }
