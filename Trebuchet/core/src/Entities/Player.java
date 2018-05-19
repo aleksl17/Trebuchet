@@ -61,7 +61,7 @@ public class Player extends Entity {
     @Override
     public void render(SpriteBatch batch) {
         batch.draw(image, pos.x, pos.y, getWidth(), getHeight());
-        if(pos.x > 1280){
+        if(pos.x > 1570){
             if (map1 == 2){
                 map1 = 3;
             }else if(map1 == 4){

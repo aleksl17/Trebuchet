@@ -50,7 +50,7 @@ public class mainMenu implements Screen {
         Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
         game.batch.begin();
 
-        game.batch.draw(head,280,400,800,200);
+        game.batch.draw(head,400,500,800,200);
         if (tid == 100) {
             if (animasjon == true) {
                 mainplayer = new Texture("playerRollRight.png");

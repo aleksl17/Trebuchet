@@ -7,8 +7,8 @@ import static Entities.Player.map1;
 
 public class TrebuchetGame extends Game {
 
-    public static final int WIDTH = 1280;
-    public static final int HEIGHT = 720;
+    public static final int WIDTH = 1600;
+    public static final int HEIGHT = 800;
 
     public SpriteBatch batch;
 
