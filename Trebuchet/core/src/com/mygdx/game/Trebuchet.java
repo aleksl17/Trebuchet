@@ -23,7 +23,7 @@ public class Trebuchet implements Screen {
 
     float w = Gdx.graphics.getWidth();
     float h = Gdx.graphics.getHeight();
-    long startTime = System.currentTimeMillis();
+    static long startTime = System.currentTimeMillis();
 
     public Trebuchet(TrebuchetGame game) {
         this.game = game;

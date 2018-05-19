@@ -23,10 +23,15 @@ public class TrebuchetGame extends Game {
     @Override
     public void render() {
         if (map1 == 5){
+            this.setScreen(new GameEnd(this));
+        }
+        if (map1 == 7){
             this.setScreen(new mainMenu(this));
         }
         if (d.isIDead() == true) {
             this.setScreen(new mainMenu(this));
+            map1=0;
+            Trebuchet.startTime = System.currentTimeMillis();
         }
 
         super.render();
