@@ -9,8 +9,8 @@ import world.gamemap;
 
 public class Player extends Entity {
 
-    private static final int SPEED = 1000; //normal = 80
-    private static final int JUMP_VELOCITY = 10; //normal = 5
+    private static final int SPEED = 80; //normal = 80
+    private static final int JUMP_VELOCITY = 5; //normal = 5
     int roll = 0;
     public static int map1;
 

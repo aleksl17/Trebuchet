@@ -27,6 +27,8 @@ public class TrebuchetGame extends Game {
         }
         if (map1 == 7){
             this.setScreen(new mainMenu(this));
+            map1=0;
+            Trebuchet.startTime = System.currentTimeMillis();
         }
         if (d.isIDead() == true) {
             this.setScreen(new mainMenu(this));
