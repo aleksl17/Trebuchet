@@ -1,6 +1,8 @@
 package com.mygdx.game;
 
 import com.badlogic.gdx.Game;
+import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.Input;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 
 import static Entities.Player.map1;
@@ -22,6 +24,9 @@ public class TrebuchetGame extends Game {
 
     @Override
     public void render() {
+        if (Gdx.input.isKeyPressed(Input.Keys.ESCAPE)) {
+            this.setScreen(new mainMenu(this));
+        }
         if (map1 == 5){
             this.setScreen(new GameEnd(this));
         }
