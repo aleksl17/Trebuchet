@@ -12,10 +12,22 @@ import java.io.*;
 import static Entities.Player.map1;
 
 public class DeathMenu implements Screen {
+
+    private static final int exitwidth = 200;
+    private static final int exitheight = 100;
+    private static final int playwidth = 200;
+    private static final int playheight = 100;
+    private static final int exity = 100;
+    private static final int playy = 250;
+    private static final int x = TrebuchetGame.WIDTH / 2 - exitwidth / 2;
+    private static final int y = TrebuchetGame.HEIGHT;
+
     TrebuchetGame game;
     Texture you_died;
     Texture Mainmenu;
     Texture MainmenuActive;
+    Texture exitButtonActive;
+    Texture exitButtonInactive;
 
     private BitmapFont font;
 
@@ -24,6 +36,8 @@ public class DeathMenu implements Screen {
         you_died = new Texture("you_died.png");
         Mainmenu = new Texture("Mainmenu.png");
         MainmenuActive = new Texture("MainmenuActive.png");
+        exitButtonActive = new Texture("exitButtonActive.png");
+        exitButtonInactive = new Texture("exitButtonInactive.png");
     }
 
     @Override
@@ -50,6 +64,15 @@ public class DeathMenu implements Screen {
             }
         }else {
             game.batch.draw(Mainmenu,1250,100,300,100);
+        }
+
+        if(Gdx.input.getX() > x && Gdx.input.getX() < x + exitwidth && Gdx.input.getY() > y - exity - exitheight && Gdx.input.getY() < y - exity) {
+            game.batch.draw(exitButtonActive, x, exity, exitwidth, exitheight);
+            if (Gdx.input.isTouched()){
+                Gdx.app.exit();
+            }
+        }else {
+            game.batch.draw(exitButtonInactive, x, exity, exitwidth, exitheight);
         }
         game.batch.end();
 
