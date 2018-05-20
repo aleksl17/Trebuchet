@@ -2,6 +2,7 @@ package world;
 
 import Entities.Entity;
 import Entities.Player;
+import Entities.NPC;
 import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.mygdx.game.Dead;
@@ -18,6 +19,7 @@ public abstract class gamemap {
     public gamemap() {
         entities = new ArrayList<Entity>();
         entities.add(new Player(1, 340, this));
+        entities.add(new NPC(1, 340, this));
     }
 
     public void render(OrthographicCamera camera, SpriteBatch batch){
@@ -33,8 +35,6 @@ public abstract class gamemap {
     public void dispose(){
 
     }
-
-
 
     public abstract TileType getTileTypeByCoordinate(int layer, int col, int row);
 

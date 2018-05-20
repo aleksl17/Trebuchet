@@ -6,7 +6,6 @@ import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import world.gamemap;
 
-
 public class Player extends Entity {
 
     private static final int SPEED = 90; //normal = 80

@@ -18,7 +18,6 @@ public abstract class Entity {
         this.map = map;
     }
 
-
     public void update (float deltaTime, float gravity){
         float newY = pos.y;
 
