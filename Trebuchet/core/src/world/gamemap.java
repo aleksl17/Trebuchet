@@ -53,7 +53,7 @@ public abstract class gamemap {
                     if (type != null && type.isCollidable()){
                         return true;}
                         else if (type != null && type.getId() == 4){
-                        d.setDead(true);
+                        d.setTuch_lava(true);
                     }
                 }
             }

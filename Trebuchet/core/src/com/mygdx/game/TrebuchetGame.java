@@ -35,7 +35,10 @@ public class TrebuchetGame extends Game {
             map1=0;
             Trebuchet.startTime = System.currentTimeMillis();
         }
-        if (d.isIDead() == true) {
+
+
+
+        if (d.isIDead()) {
             this.setScreen(new DeathMenu(this));            map1=0;
             Trebuchet.startTime = System.currentTimeMillis();
             d.setDead(false);
