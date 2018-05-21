@@ -8,10 +8,12 @@ import world.gamemap;
 
 public class Player extends Entity {
 
-    private static final int SPEED = 90; //normal = 80
+    private static final int SPEED = 90; //normal = 90
     private static final int JUMP_VELOCITY = 5; //normal = 5
     int roll = 0;
     public static int map1;
+    public static float getx;
+    public static float gety;
 
     public static Texture image;
 
@@ -68,8 +70,10 @@ public class Player extends Entity {
             else{map1 = 1;}
 
         }
-
+        getx = pos.x;
+        gety = pos.y;
     }
+
 
 
 

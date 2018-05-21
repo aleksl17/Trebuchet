@@ -1,15 +1,14 @@
 package Entities;
 
-import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.Input;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+import com.mygdx.game.Dead;
 import world.gamemap;
 
 public class NPC extends Entity {
 
-    private static final int SPEED = 100;
-    private static final int JUMP_VELOCITY = 10;
+    private static final int SPEED = 30;
+    int move = 0;
 
     public static Texture image;
 
@@ -23,18 +22,26 @@ public class NPC extends Entity {
         super.update(deltaTime, gravity);
 
 
-        if (Gdx.input.isKeyPressed(Input.Keys.A)) {
-            image = new Texture("EnemyCatapultLeft.png");
-            moveX(-SPEED * deltaTime);
-        }
-        if (Gdx.input.isKeyPressed(Input.Keys.D)) {
-            image = new Texture("EnemyCatapultRight.png");
-            moveX(SPEED * deltaTime);
-        }
+       if (move < 100) {
+           image = new Texture("EnemyCatapultLeft.png");
+           moveX(-SPEED * deltaTime);
+       }else {
+           image = new Texture("EnemyCatapultRight.png");
+           moveX(SPEED * deltaTime);
+       }
+       move += 1;
+       if (move == 200){move = 0;}
+
     }
 
     @Override
     public void render(SpriteBatch batch) {
         batch.draw(image, pos.x, pos.y, getWidth(), getHeight());
+        for(float i = 0;i<31;i++){
+        if (Player.getx + i > pos.x && Player.getx + i < pos.x+26 && Player.gety + i > pos.y && Player.gety + i < pos.y+26){
+            Dead.setDead(true);
+        }}
+        //Player.gety > pos.y && Player.gety < pos.y+26
+        //Player.getx > pos.x && Player.getx < pos.x+26
     }
 }

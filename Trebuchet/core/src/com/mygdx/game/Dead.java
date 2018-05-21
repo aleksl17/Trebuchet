@@ -10,7 +10,7 @@ public class Dead {
 
     }
 
-    public void setDead(boolean dead) {
+    public static void setDead(boolean dead) {
         isDead = dead;
         //System.out.print("rørte lava\n");
     }

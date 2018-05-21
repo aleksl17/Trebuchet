@@ -10,6 +10,8 @@ import com.mygdx.game.Dead;
 
 import java.util.ArrayList;
 
+import static Entities.Player.map1;
+
 
 public abstract class gamemap {
     Dead d = new Dead();
@@ -19,7 +21,9 @@ public abstract class gamemap {
     public gamemap() {
         entities = new ArrayList<Entity>();
         entities.add(new Player(1, 340, this));
-        entities.add(new NPC(1, 340, this));
+        if (map1 == 0) {
+            entities.add(new NPC(248, 400, this));
+        }
     }
 
     public void render(OrthographicCamera camera, SpriteBatch batch){
