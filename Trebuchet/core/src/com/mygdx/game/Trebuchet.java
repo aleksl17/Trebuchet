@@ -23,7 +23,7 @@ public class Trebuchet implements Screen {
 
     float w = Gdx.graphics.getWidth();
     float h = Gdx.graphics.getHeight();
-    static long startTime = System.currentTimeMillis();
+    public static long startTime = System.currentTimeMillis();
 
     public Trebuchet(TrebuchetGame game) {
         this.game = game;
@@ -31,14 +31,10 @@ public class Trebuchet implements Screen {
 
     @Override
     public void show() {
-batch = new SpriteBatch();
-
-
-
+        batch = new SpriteBatch();
         cam = new OrthographicCamera();
         cam.setToOrtho(false, w, h);
         gameMap = new TiledGameMap();
-
         cam.update();
     }
 
@@ -70,22 +66,18 @@ batch = new SpriteBatch();
 
     @Override
     public void resize(int width, int height) {
-
     }
 
     @Override
     public void pause() {
-
     }
 
     @Override
     public void resume() {
-
     }
 
     @Override
     public void hide() {
-
     }
 
     @Override

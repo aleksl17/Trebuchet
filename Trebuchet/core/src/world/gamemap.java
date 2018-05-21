@@ -5,11 +5,11 @@ import Entities.Player;
 import Entities.NPC;
 import Entities.FollowNPC;
 import Entities.ShootNPC;
+import Entities.Cannonball;
 import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.mygdx.game.Dead;
-
-
+import com.mygdx.game.Trebuchet;
 import java.util.ArrayList;
 
 import static Entities.Player.map1;
@@ -27,7 +27,8 @@ public abstract class gamemap {
             entities.add(new NPC(1050, 370, this));
             entities.add(new NPC(1334, 500, this));
             entities.add(new FollowNPC(535, 370, this));
-            entities.add(new ShootNPC(800, 370, this));
+            entities.add(new ShootNPC(905, 384, this));
+            entities.add(new Cannonball(917, 390, this));
         }
         if (map1 == 1) {
             entities.add(new NPC(312, 340, this));

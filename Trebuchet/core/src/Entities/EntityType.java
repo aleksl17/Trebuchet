@@ -6,7 +6,8 @@ public enum EntityType {
     PLAYER("player", Player.class, 26, 26, 40),
     NPC("NPC", NPC.class, 26, 16, 20),
     FollowNPC("FollowNPC", FollowNPC.class, 26, 19, 100),
-    ShootNPC("ShootNPC", ShootNPC.class, 26, 13, 80);
+    ShootNPC("ShootNPC", ShootNPC.class, 26, 13, 80),
+    Cannonball("Cannonball", Cannonball.class, 4, 4, 1);
 
     private String id;
     private Class loaderClass;

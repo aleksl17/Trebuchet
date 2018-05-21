@@ -43,9 +43,8 @@ public class Player extends Entity {
             if (flame == 20){flame = 0;}
             if (timer == 100){d.setDead(true); }
 
-        }else{
-
-
+        }
+        else{
 
             if (Gdx.input.isKeyPressed(Keys.UP) && grounded) {
                 this.velocityY += JUMP_VELOCITY * getWeight();
