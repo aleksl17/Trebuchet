@@ -4,7 +4,8 @@ package Entities;
 public enum EntityType {
 
     PLAYER("player", Player.class, 26, 26, 40),
-    NPC("NPC", NPC.class, 26, 16, 20);
+    NPC("NPC", NPC.class, 26, 16, 20),
+    FollowNPC("FollowNPC", FollowNPC.class, 26, 13, 100);
 
     private String id;
     private Class loaderClass;
