@@ -22,7 +22,7 @@ public class NPC extends Entity {
         super.update(deltaTime, gravity);
 
 
-       if (move < 100) {
+       if (move < 300) {
            image = new Texture("EnemyCatapultLeft.png");
            moveX(-SPEED * deltaTime);
        }
@@ -31,7 +31,7 @@ public class NPC extends Entity {
            moveX(SPEED * deltaTime);
        }
        move += 1;
-       if (move == 200){move = 0;}
+       if (move == 600){move = 0;}
 
     }
 

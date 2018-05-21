@@ -7,7 +7,7 @@ import world.gamemap;
 
 public class FollowNPC extends Entity {
 
-    private static final int SPEED = 60;
+    private static final int SPEED = 40;
 
     public static Texture image;
 
@@ -20,7 +20,7 @@ public class FollowNPC extends Entity {
     public void update(float deltaTime, float gravity){
         super.update(deltaTime, gravity);
 
-        if (Player.getx > (pos.x-64) && Player.getx < (pos.x)) {
+        if (Player.getx > (pos.x-100) && Player.getx < (pos.x)) {
             image = new Texture("FollowNPCLeft.png");
             moveX(-SPEED * deltaTime);
         }

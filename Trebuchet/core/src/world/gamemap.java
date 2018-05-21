@@ -25,19 +25,17 @@ public abstract class gamemap {
             entities.add(new NPC(248, 370, this));
             entities.add(new NPC(1050, 370, this));
             entities.add(new NPC(1334, 500, this));
-            entities.add(new FollowNPC(535, 370, this));
-            entities.add(new ShootNPC(905, 384, this));
-            entities.add(new Cannonball(917, 390, this));
         }
         if (map1 == 1) {
             entities.add(new NPC(312, 340, this));
-            entities.add(new NPC(760, 417, this));
+            entities.add(new FollowNPC(760, 417, this));
             entities.add(new NPC(810, 195, this));
             entities.add(new NPC(1325, 340, this));
         }
         if (map1 == 3) {
             entities.add(new NPC(248, 370, this));
-            entities.add(new NPC(560, 530, this));
+            entities.add(new ShootNPC(560, 530, this));
+            entities.add(new Cannonball(572, 536, this));
             entities.add(new NPC(870, 370, this));
             entities.add(new NPC(1200, 370, this));
         }
