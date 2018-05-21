@@ -5,9 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9e6295b2-49b3-4570-844e-93e66c6a1335" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/core/src/Entities/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/Entities/Entity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/Entities/EntityType.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/Entities/EntityType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/Entities/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/Entities/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/out/production/classes/Entities/NPC.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/out/production/classes/Entities/NPC.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/Entities/Cannonball.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/Entities/Cannonball.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/Entities/FollowNPC.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/Entities/FollowNPC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/Entities/NPC.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/Entities/NPC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/Entities/ShootNPC.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/Entities/ShootNPC.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/src/world/gamemap.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/world/gamemap.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -32,11 +35,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="gamemap.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="gamemap.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/src/world/gamemap.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="88" lean-forward="true" selection-start-line="88" selection-end-line="88" />
+            <state relative-caret-position="289">
+              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#2917#2918#0" expanded="true" />
@@ -51,8 +54,8 @@
       <file leaf-file-name="Entity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/src/Entities/Entity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="46" selection-start-line="46" selection-end-line="46" />
+            <state relative-caret-position="323">
+              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -75,35 +78,8 @@
       <file leaf-file-name="Player.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/src/Entities/Player.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1547">
-              <caret line="96" column="5" selection-start-line="96" selection-start-column="5" selection-end-line="96" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NPC.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/Entities/NPC.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FollowNPC.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/Entities/FollowNPC.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="377">
-              <caret line="35" column="12" selection-start-line="35" selection-start-column="12" selection-end-line="35" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ShootNPC.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/Entities/ShootNPC.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="377">
-              <caret line="41" column="12" selection-start-line="41" selection-start-column="12" selection-end-line="41" selection-end-column="12" />
+            <state relative-caret-position="173">
+              <caret line="80" lean-forward="true" selection-start-line="80" selection-end-line="80" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -111,7 +87,37 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Cannonball.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="NPC.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/Entities/NPC.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="479">
+              <caret line="45" column="5" lean-forward="true" selection-start-line="37" selection-start-column="4" selection-end-line="45" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FollowNPC.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/Entities/FollowNPC.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="462">
+              <caret line="40" column="5" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ShootNPC.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/Entities/ShootNPC.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="462">
+              <caret line="46" column="5" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Cannonball.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/core/src/Entities/Cannonball.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="309">
@@ -137,6 +143,7 @@
     <findStrings>
       <find>npc</find>
       <find>startTime</find>
+      <find>getx</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -966,15 +973,15 @@
         <option value="$PROJECT_DIR$/core/src/com/mygdx/game/Dead.java" />
         <option value="$PROJECT_DIR$/core/src/com/mygdx/game/Trebuchet.java" />
         <option value="$PROJECT_DIR$/core/src/com/mygdx/game/TrebuchetGame.java" />
-        <option value="$PROJECT_DIR$/core/src/Entities/NPC.java" />
-        <option value="$PROJECT_DIR$/core/src/Entities/ShootNPC.java" />
-        <option value="$PROJECT_DIR$/core/src/Entities/FollowNPC.java" />
-        <option value="$PROJECT_DIR$/core/src/Entities/Cannonball.java" />
         <option value="$PROJECT_DIR$/core/src/Entities/Player.java" />
         <option value="$PROJECT_DIR$/core/src/Entities/EntityType.java" />
         <option value="$PROJECT_DIR$/core/src/Entities/Entity.java" />
         <option value="$PROJECT_DIR$/core/src/world/gamemap.java" />
         <option value="$PROJECT_DIR$/core/src/world/gamemap.java" />
+        <option value="$PROJECT_DIR$/core/src/Entities/NPC.java" />
+        <option value="$PROJECT_DIR$/core/src/Entities/FollowNPC.java" />
+        <option value="$PROJECT_DIR$/core/src/Entities/ShootNPC.java" />
+        <option value="$PROJECT_DIR$/core/src/Entities/Cannonball.java" />
       </list>
     </option>
   </component>
@@ -1195,12 +1202,12 @@
       <workItem from="1526909831437" duration="40000" />
       <workItem from="1526910444432" duration="68000" />
       <workItem from="1526910912046" duration="2439000" />
-      <workItem from="1526916485494" duration="3839000" />
+      <workItem from="1526916485494" duration="4223000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="118461000" />
+    <option name="totallyTimeSpent" value="118845000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -1419,44 +1426,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/Entities/Cannonball.java">
+    <entry file="file://$PROJECT_DIR$/core/src/world/gamemap.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+        <state relative-caret-position="289">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2917#2918#0" expanded="true" />
+            <element signature="e#2976#2977#0" expanded="true" />
+            <element signature="e#3010#3011#0" expanded="true" />
+            <element signature="e#3070#3071#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/Entities/ShootNPC.java">
+    <entry file="file://$PROJECT_DIR$/core/src/Entities/Entity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="41" column="12" selection-start-line="41" selection-start-column="12" selection-end-line="41" selection-end-column="12" />
+        <state relative-caret-position="323">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/Entities/FollowNPC.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="35" column="12" selection-start-line="35" selection-start-column="12" selection-end-line="35" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/Entities/NPC.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/Entities/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1547">
-          <caret line="96" column="5" selection-start-line="96" selection-start-column="5" selection-end-line="96" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -1470,26 +1460,46 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/Entities/Entity.java">
+    <entry file="file://$PROJECT_DIR$/core/src/Entities/Player.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="46" selection-start-line="46" selection-end-line="46" />
+        <state relative-caret-position="173">
+          <caret line="80" lean-forward="true" selection-start-line="80" selection-end-line="80" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/world/gamemap.java">
+    <entry file="file://$PROJECT_DIR$/core/src/Entities/NPC.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="88" lean-forward="true" selection-start-line="88" selection-end-line="88" />
+        <state relative-caret-position="479">
+          <caret line="45" column="5" lean-forward="true" selection-start-line="37" selection-start-column="4" selection-end-line="45" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/Entities/FollowNPC.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="40" column="5" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/Entities/ShootNPC.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="46" column="5" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2917#2918#0" expanded="true" />
-            <element signature="e#2976#2977#0" expanded="true" />
-            <element signature="e#3010#3011#0" expanded="true" />
-            <element signature="e#3070#3071#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/Entities/Cannonball.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

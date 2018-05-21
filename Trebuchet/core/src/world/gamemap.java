@@ -90,5 +90,4 @@ public abstract class gamemap {
     public int getPixelHeight(){
         return this.getHeight() * TileType.TILE_SIZE;
     }
-
 }

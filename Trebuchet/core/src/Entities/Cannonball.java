@@ -36,8 +36,8 @@ public class Cannonball extends Entity {
     @Override
     public void render(SpriteBatch batch) {
         batch.draw(image, pos.x, pos.y, getWidth(), getHeight());
-        for (float i = 0;i<31;i++){
-            if (Player.getx + i > pos.x && Player.getx + i < pos.x+4 && Player.gety + i > pos.y && Player.gety + i < pos.y+4){
+        for (float i = 0;i<26;i++){
+            if (Player.getx + i > pos.x && Player.getx + i < pos.x + getWidth() && Player.gety + i > pos.y && Player.gety + i < pos.y + getHeight()){
                 Dead.setDead(true);
             }
         }
