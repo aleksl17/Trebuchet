@@ -42,5 +42,4 @@ public class TrebuchetGame extends Game {
         }
         super.render();
     }
-
 }

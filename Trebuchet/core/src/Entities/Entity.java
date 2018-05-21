@@ -30,7 +30,8 @@ public abstract class Entity {
             grounded = true;
             }
             this.velocityY = 0;
-        } else{
+        }
+        else{
             this.pos.y = newY;
             grounded = false;
         }

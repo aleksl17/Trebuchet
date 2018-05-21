@@ -25,7 +25,8 @@ public class NPC extends Entity {
        if (move < 100) {
            image = new Texture("EnemyCatapultLeft.png");
            moveX(-SPEED * deltaTime);
-       }else {
+       }
+       else {
            image = new Texture("EnemyCatapultRight.png");
            moveX(SPEED * deltaTime);
        }

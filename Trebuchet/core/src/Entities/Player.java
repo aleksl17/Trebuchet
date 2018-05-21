@@ -35,7 +35,8 @@ public class Player extends Entity {
         if (d.isTuch_lava()){
             if (flame > 10){
                 image = new Texture("onflame_1.png");
-            }else {
+            }
+            else {
                 image = new Texture("onfflame2.png");
             }
             flame += 1;
@@ -59,7 +60,8 @@ public class Player extends Entity {
 
                 if (roll > 10){
                     image = new Texture("playerRollLeft.png");
-                }else {
+                }
+                else {
                     image = new Texture("playerRollLeft1.png");
                 }
                 roll += 1;
@@ -71,7 +73,8 @@ public class Player extends Entity {
 
                 if (roll > 10){
                     image = new Texture("playerRollRight.png");
-                }else {
+                }
+                else {
                     image = new Texture("playerRollRight1.png");
                 }
                 roll += 1;
@@ -89,12 +92,12 @@ public class Player extends Entity {
         if(pos.x > 1600 - 40){
             if (map1 == 2){
                 map1 = 3;
-            }else if(map1 == 4){
+            }
+            else if(map1 == 4){
                 map1 = 5;
 
             }
             else{map1 = 1;}
-
         }
         getx = pos.x;
         gety = pos.y;
