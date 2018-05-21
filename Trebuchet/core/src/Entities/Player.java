@@ -19,6 +19,7 @@ public class Player extends Entity {
     public static int map1;
     public static float getx;
     public static float gety;
+    public static float getPlayerWidth;
 
     public static Texture image;
 
@@ -94,5 +95,6 @@ public class Player extends Entity {
         }
         getx = pos.x;
         gety = pos.y;
+        getPlayerWidth = getWidth();
     }
 }
