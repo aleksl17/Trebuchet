@@ -11,8 +11,6 @@ public class Player extends Entity {
 
     Dead d = new Dead();
 
-
-
     private static final int SPEED = 90; //normal = 90
     private static final int JUMP_VELOCITY = 5; //normal = 5
     int roll = 0;
@@ -43,10 +41,8 @@ public class Player extends Entity {
             timer += 1;
             if (flame == 20){flame = 0;}
             if (timer == 100){d.setDead(true); }
-
         }
-        else{
-
+        else {
             if (Gdx.input.isKeyPressed(Keys.UP) && grounded) {
                 this.velocityY += JUMP_VELOCITY * getWeight();
             }
@@ -80,10 +76,7 @@ public class Player extends Entity {
                 roll += 1;
                 if (roll == 20){roll = 0;}
             }
-
-
         }
-
     }
 
     @Override
@@ -102,8 +95,4 @@ public class Player extends Entity {
         getx = pos.x;
         gety = pos.y;
     }
-
-
-
-
 }

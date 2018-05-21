@@ -37,6 +37,4 @@ public enum EntityType {
     public float getWeight() {
         return weight;
     }
-
-
 }

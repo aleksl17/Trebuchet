@@ -48,13 +48,14 @@ public abstract class gamemap {
             entity.render(batch);
         }
     }
+
     public void update(float delta){
         for(Entity entity : entities){
             entity.update(delta, -9.8f);
         }
     }
-    public void dispose(){
 
+    public void dispose(){
     }
 
     public abstract TileType getTileTypeByCoordinate(int layer, int col, int row);

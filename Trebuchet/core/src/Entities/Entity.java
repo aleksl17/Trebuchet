@@ -45,7 +45,6 @@ public abstract class Entity {
             this.pos.x = newX;
     }
 
-
     public int getWidth(){
         return type.getWidth();
     }
