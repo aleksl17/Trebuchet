@@ -35,7 +35,7 @@ public class FollowNPC extends Entity {
     public void render(SpriteBatch batch) {
         batch.draw(image, pos.x, pos.y, getWidth(), getHeight());
         for(float i = 0;i<31;i++){
-            if (Player.getx + i > pos.x && Player.getx + i < pos.x+26 && Player.gety + i > pos.y && Player.gety + i < pos.y+13){
+            if (Player.getx + i > pos.x && Player.getx + i < pos.x+26 && Player.gety + i > pos.y && Player.gety + i < pos.y+19){
                 Dead.setDead(true);
             }}
     }
