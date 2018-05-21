@@ -40,7 +40,8 @@ public class NPC extends Entity {
         for(float i = 0;i<31;i++){
         if (Player.getx + i > pos.x && Player.getx + i < pos.x+26 && Player.gety + i > pos.y && Player.gety + i < pos.y+16){
             Dead.setDead(true);
-        }}
+        }
+        }
         //Player.gety > pos.y && Player.gety < pos.y+26
         //Player.getx > pos.x && Player.getx < pos.x+26
     }

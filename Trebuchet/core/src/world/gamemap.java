@@ -4,6 +4,7 @@ import Entities.Entity;
 import Entities.Player;
 import Entities.NPC;
 import Entities.FollowNPC;
+import Entities.ShootNPC;
 import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.mygdx.game.Dead;
@@ -26,6 +27,7 @@ public abstract class gamemap {
             entities.add(new NPC(1050, 370, this));
             entities.add(new NPC(1334, 500, this));
             entities.add(new FollowNPC(535, 370, this));
+            entities.add(new ShootNPC(800, 370, this));
         }
         if (map1 == 1) {
             entities.add(new NPC(312, 340, this));

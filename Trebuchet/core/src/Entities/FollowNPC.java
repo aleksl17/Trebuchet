@@ -7,8 +7,7 @@ import world.gamemap;
 
 public class FollowNPC extends Entity {
 
-    private static final int SPEED = 20;
-    int move = 0;
+    private static final int SPEED = 60;
 
     public static Texture image;
 
@@ -37,6 +36,7 @@ public class FollowNPC extends Entity {
         for(float i = 0;i<31;i++){
             if (Player.getx + i > pos.x && Player.getx + i < pos.x+26 && Player.gety + i > pos.y && Player.gety + i < pos.y+19){
                 Dead.setDead(true);
-            }}
+            }
+        }
     }
 }
