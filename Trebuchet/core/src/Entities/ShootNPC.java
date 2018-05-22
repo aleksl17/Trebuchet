@@ -2,7 +2,7 @@ package Entities;
 
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
-import com.mygdx.game.Dead;
+import com.mygdx.game.Dying;
 import world.gamemap;
 
 public class ShootNPC extends Entity {
@@ -41,7 +41,7 @@ public class ShootNPC extends Entity {
         batch.draw(image, pos.x, pos.y, getWidth(), getHeight());
         for (float i = 0; i < Player.getPlayerWidth; i++){
             if (Player.getx + i > pos.x && Player.getx + i < pos.x + getWidth() && Player.gety + i > pos.y && Player.gety + i < pos.y + getHeight()){
-                Dead.setDead(true);
+                Dying.got_hit();
             }
         }
     }

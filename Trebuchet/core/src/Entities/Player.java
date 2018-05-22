@@ -4,12 +4,12 @@ import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Input.Keys;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
-import com.mygdx.game.Dead;
+import com.mygdx.game.Dying;
 import world.gamemap;
 
 public class Player extends Entity {
 
-    Dead d = new Dead();
+    Dying d = new Dying();
 
     private static final int SPEED = 90; //normal = 90
     private static final int JUMP_VELOCITY = 5; //normal = 5

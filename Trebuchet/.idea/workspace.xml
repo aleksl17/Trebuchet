@@ -5,11 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9e6295b2-49b3-4570-844e-93e66c6a1335" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.6/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.6/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/assets/map2.tmx" beforeDir="false" afterPath="$PROJECT_DIR$/core/assets/map2.tmx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/out/production/classes/Entities/Cannonball.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/out/production/classes/Entities/Cannonball.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/out/production/classes/Entities/FollowNPC.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/out/production/classes/Entities/FollowNPC.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/out/production/classes/Entities/NPC.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/out/production/classes/Entities/NPC.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/out/production/classes/Entities/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/out/production/classes/Entities/Player.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/out/production/classes/Entities/ShootNPC.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/out/production/classes/Entities/ShootNPC.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/out/production/classes/com/mygdx/game/Dead.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/out/production/classes/com/mygdx/game/TrebuchetGame.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/out/production/classes/com/mygdx/game/TrebuchetGame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/out/production/classes/world/gamemap.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/out/production/classes/world/gamemap.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/Entities/Cannonball.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/Entities/Cannonball.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/src/Entities/FollowNPC.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/Entities/FollowNPC.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/src/Entities/NPC.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/Entities/NPC.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/src/Entities/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/Entities/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/Entities/ShootNPC.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/Entities/ShootNPC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/com/mygdx/game/Dead.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/com/mygdx/game/Dying.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/com/mygdx/game/TrebuchetGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/com/mygdx/game/TrebuchetGame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/src/world/gamemap.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/world/gamemap.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -37,14 +51,10 @@
       <file leaf-file-name="gamemap.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/src/world/gamemap.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
+            <state relative-caret-position="35">
               <caret line="39" column="51" selection-start-line="39" selection-start-column="51" selection-end-line="39" selection-end-column="51" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2867#2868#0" expanded="true" />
-                <element signature="e#2926#2927#0" expanded="true" />
-                <element signature="e#2960#2961#0" expanded="true" />
-                <element signature="e#3020#3021#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -69,11 +79,36 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Player.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Player.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/src/Entities/Player.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="18" column="29" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
+            <state relative-caret-position="-544">
+              <caret line="18" column="27" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Cannonball.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/Entities/Cannonball.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="426">
+              <caret line="40" column="32" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Dying.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/Dying.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="409">
+              <caret line="48" column="37" lean-forward="true" selection-start-line="48" selection-start-column="37" selection-end-line="48" selection-end-column="37" />
+              <folding>
+                <element signature="e#819#820#0" expanded="true" />
+                <element signature="e#854#855#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -81,8 +116,8 @@
       <file leaf-file-name="FollowNPC.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/src/Entities/FollowNPC.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="11" column="32" lean-forward="true" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
+            <state relative-caret-position="426">
+              <caret line="37" column="32" selection-start-line="37" selection-start-column="32" selection-end-line="37" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -103,8 +138,20 @@
       <file leaf-file-name="NPC.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/src/Entities/NPC.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="33" column="20" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
+            <state relative-caret-position="426">
+              <caret line="42" column="28" selection-start-line="42" selection-start-column="28" selection-end-line="42" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ShootNPC.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/Entities/ShootNPC.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="449">
+              <caret line="43" column="32" selection-start-line="43" selection-start-column="32" selection-end-line="43" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -112,32 +159,11 @@
       <file leaf-file-name="TrebuchetGame.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/TrebuchetGame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+            <state relative-caret-position="341">
+              <caret line="36" selection-start-line="36" selection-end-line="36" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mainMenu.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/mainMenu.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="17" column="54" selection-start-line="17" selection-start-column="54" selection-end-line="17" selection-end-column="54" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Dead.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/Dead.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -755,7 +781,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="10688415225419" />
+        <entry key="$PROJECT_DIR$" value="10688616999317" />
         <entry key="$PROJECT_DIR$/.gradle" value="0" />
         <entry key="$PROJECT_DIR$/build.gradle" value="870102429" />
         <entry key="$PROJECT_DIR$/core/build.gradle" value="2971590108" />
@@ -954,8 +980,8 @@
     </option>
     <option name="projectSyncType">
       <map>
-        <entry key="$PROJECT_DIR$" value="RE_IMPORT" />
         <entry key="$USER_HOME$/Downloads/test" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$" value="RE_IMPORT" />
       </map>
     </option>
   </component>
@@ -985,16 +1011,17 @@
         <option value="$PROJECT_DIR$/core/src/com/mygdx/game/DeathMenu.java" />
         <option value="$PROJECT_DIR$/core/src/com/mygdx/game/Dead.java" />
         <option value="$PROJECT_DIR$/core/src/com/mygdx/game/Trebuchet.java" />
-        <option value="$PROJECT_DIR$/core/src/com/mygdx/game/TrebuchetGame.java" />
         <option value="$PROJECT_DIR$/core/src/Entities/EntityType.java" />
         <option value="$PROJECT_DIR$/core/src/Entities/Entity.java" />
+        <option value="$PROJECT_DIR$/core/src/world/gamemap.java" />
+        <option value="$PROJECT_DIR$/core/src/world/gamemap.java" />
+        <option value="$PROJECT_DIR$/core/src/Entities/Player.java" />
+        <option value="$PROJECT_DIR$/core/src/Entities/FollowNPC.java" />
+        <option value="$PROJECT_DIR$/core/src/Entities/NPC.java" />
         <option value="$PROJECT_DIR$/core/src/Entities/ShootNPC.java" />
         <option value="$PROJECT_DIR$/core/src/Entities/Cannonball.java" />
-        <option value="$PROJECT_DIR$/core/src/world/gamemap.java" />
-        <option value="$PROJECT_DIR$/core/src/world/gamemap.java" />
-        <option value="$PROJECT_DIR$/core/src/Entities/NPC.java" />
-        <option value="$PROJECT_DIR$/core/src/Entities/FollowNPC.java" />
-        <option value="$PROJECT_DIR$/core/src/Entities/Player.java" />
+        <option value="$PROJECT_DIR$/core/src/com/mygdx/game/TrebuchetGame.java" />
+        <option value="$PROJECT_DIR$/core/src/com/mygdx/game/Dying.java" />
       </list>
     </option>
   </component>
@@ -1007,10 +1034,11 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="641" />
-    <option name="width" value="1208" />
-    <option name="height" value="1047" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="131" />
+    <option name="y" value="192" />
+    <option name="width" value="1386" />
+    <option name="height" value="788" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -1020,8 +1048,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -1061,16 +1087,13 @@
               <item name="src" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="world" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Trebuchet" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Trebuchet" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="gradle" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1215,14 +1238,16 @@
       <workItem from="1526910444432" duration="68000" />
       <workItem from="1526910912046" duration="2439000" />
       <workItem from="1526916485494" duration="4792000" />
+      <workItem from="1526945326329" duration="1100000" />
+      <workItem from="1526952939758" duration="1178000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="120059000" />
+    <option name="totallyTimeSpent" value="122337000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="641" y="0" width="1208" height="1047" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -1234,51 +1259,28 @@
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50073206" side_tool="true" weight="0.3290938" />
       <window_info anchor="right" id="Maven Projects" order="5" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.31562167" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.32897604" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3190319" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2587108" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15625" />
       <window_info anchor="right" id="Database" order="7" />
       <window_info anchor="right" id="Gradle" order="6" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="3" />
       <window_info anchor="right" id="Theme Preview" order="8" />
-      <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info id="Learn" order="7" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50073206" side_tool="true" weight="0.3290938" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1566618" />
       <window_info id="Favorites" order="4" side_tool="true" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Palette&#9;" order="9" />
-      <window_info anchor="right" id="Maven Projects" order="5" />
-      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info id="Image Layers" order="6" />
-      <window_info anchor="right" id="Theme Preview" order="8" />
-      <window_info anchor="right" id="Database" order="7" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info anchor="bottom" id="Version Control" order="11" weight="0.32897604" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info id="UI Designer" order="3" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32965517" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3163752" />
-      <window_info anchor="bottom" id="Build" order="10" sideWeight="0.49926794" weight="0.3304721" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.23804463" />
-      <window_info anchor="right" id="Gradle" order="6" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info id="Designer" order="2" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Build" order="10" sideWeight="0.49926794" weight="0.32943678" />
+      <window_info id="Learn" order="7" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32965517" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1312,10 +1314,6 @@
           <caret line="39" column="51" selection-start-line="39" selection-start-column="51" selection-end-line="39" selection-end-column="51" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2867#2868#0" expanded="true" />
-            <element signature="e#2926#2927#0" expanded="true" />
-            <element signature="e#2960#2961#0" expanded="true" />
-            <element signature="e#3020#3021#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1344,27 +1342,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/world/TileType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/assets/map.tmx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3111">
-          <caret line="183" column="89" selection-start-line="183" selection-start-column="89" selection-end-line="183" selection-end-column="89" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/world/TiledGameMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="901">
-          <caret line="63" column="47" selection-start-line="63" selection-start-column="47" selection-end-line="63" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/world/TileType.java" />
+    <entry file="file://$PROJECT_DIR$/core/assets/map.tmx" />
+    <entry file="file://$PROJECT_DIR$/core/src/world/TiledGameMap.java" />
     <entry file="file://$PROJECT_DIR$/core/src/customgamemap/CustomGameMap.java" />
     <entry file="file://$PROJECT_DIR$/core/src/customgamemap/CustomGameMapLoader.java" />
     <entry file="file://$PROJECT_DIR$/core/src/world/CustomGameMapData.java" />
@@ -1375,13 +1355,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/assets/map.tmx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3621">
-          <caret line="213" column="6" selection-start-line="213" selection-start-column="6" selection-end-line="213" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/core/assets/map.tmx" />
     <entry file="file://$PROJECT_DIR$/core/src/world/gamemap.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -1389,20 +1363,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/world/TileType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/world/TiledGameMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="901">
-          <caret line="63" column="47" selection-start-line="63" selection-start-column="47" selection-end-line="63" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/world/TileType.java" />
+    <entry file="file://$PROJECT_DIR$/core/src/world/TiledGameMap.java" />
     <entry file="file://$PROJECT_DIR$/desktop/src/com/mygdx/game/desktop/DesktopLauncher.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -1427,28 +1389,10 @@
     <entry file="file://$PROJECT_DIR$/core/assets/maps/basic.map" />
     <entry file="file://$PROJECT_DIR$/core/assets/map1.tmx" />
     <entry file="file://$PROJECT_DIR$/core/src/world/TiledGameMap2.java" />
-    <entry file="file://$PROJECT_DIR$/core/assets/map.tmx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1635">
-          <caret line="109" column="19" selection-end-line="114" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/core/assets/map.tmx" />
     <entry file="file://$PROJECT_DIR$/core/assets/map2.tmx" />
-    <entry file="file://$PROJECT_DIR$/core/src/world/TiledGameMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="36" selection-start-line="36" selection-end-line="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/world/TileType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/world/TiledGameMap.java" />
+    <entry file="file://$PROJECT_DIR$/core/src/world/TileType.java" />
     <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/GameEnd.java" />
     <entry file="file://$PROJECT_DIR$/core/assets/Highscore.txt" />
     <entry file="file://$PROJECT_DIR$/desktop/src/com/mygdx/game/desktop/DesktopLauncher.java">
@@ -1464,30 +1408,8 @@
         <state relative-caret-position="-199" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/DeathMenu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/Dead.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/mainMenu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="17" column="54" selection-start-line="17" selection-start-column="54" selection-end-line="17" selection-end-column="54" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/DeathMenu.java" />
+    <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/mainMenu.java" />
     <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/Trebuchet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -1499,16 +1421,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/TrebuchetGame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/src/Entities/Entity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -1516,6 +1428,58 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/Trebuchet/core/src/world/gamemap.java" />
+    <entry file="file://$PROJECT_DIR$/core/src/Entities/FollowNPC.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="426">
+          <caret line="37" column="32" selection-start-line="37" selection-start-column="32" selection-end-line="37" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/Entities/NPC.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="426">
+          <caret line="42" column="28" selection-start-line="42" selection-start-column="28" selection-end-line="42" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/Entities/ShootNPC.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="449">
+          <caret line="43" column="32" selection-start-line="43" selection-start-column="32" selection-end-line="43" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/Entities/Cannonball.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="426">
+          <caret line="40" column="32" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/TrebuchetGame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/Entities/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-544">
+          <caret line="18" column="27" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
         </state>
       </provider>
     </entry>
@@ -1536,61 +1500,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/Entities/ShootNPC.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="46" column="5" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/Entities/Cannonball.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/Trebuchet/core/src/world/gamemap.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/src/world/gamemap.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
+        <state relative-caret-position="35">
           <caret line="39" column="51" selection-start-line="39" selection-start-column="51" selection-end-line="39" selection-end-column="51" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2867#2868#0" expanded="true" />
-            <element signature="e#2926#2927#0" expanded="true" />
-            <element signature="e#2960#2961#0" expanded="true" />
-            <element signature="e#3020#3021#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/Entities/NPC.java">
+    <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/Dying.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="33" column="20" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/Entities/FollowNPC.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="11" column="32" lean-forward="true" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/Entities/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="18" column="29" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
+        <state relative-caret-position="409">
+          <caret line="48" column="37" lean-forward="true" selection-start-line="48" selection-start-column="37" selection-end-line="48" selection-end-column="37" />
+          <folding>
+            <element signature="e#819#820#0" expanded="true" />
+            <element signature="e#854#855#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

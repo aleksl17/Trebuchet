@@ -8,13 +8,13 @@ import Entities.ShootNPC;
 import Entities.Cannonball;
 import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
-import com.mygdx.game.Dead;
+import com.mygdx.game.Dying;
 import java.util.ArrayList;
 
 import static Entities.Player.map1;
 
 public abstract class gamemap {
-    Dead d = new Dead();
+    Dying d = new Dying();
 
     protected ArrayList<Entity> entities;
 
