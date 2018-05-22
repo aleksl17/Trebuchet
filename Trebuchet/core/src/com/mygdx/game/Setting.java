@@ -29,6 +29,7 @@ public class Setting implements Screen {
     private static final int HighLowx = x + 400;
     private static final int HighLowwidth = 200;
     public static boolean graphicisHigh = true;
+    public static int vanskelighetsgrad = 1;
 
     public Setting(TrebuchetGame game) {
         this.game = game;

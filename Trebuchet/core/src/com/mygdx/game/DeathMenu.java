@@ -28,6 +28,9 @@ public class DeathMenu implements Screen {
     Texture MainmenuActive;
     Texture exitButtonActive;
     Texture exitButtonInactive;
+    Texture playButtonActive;
+    Texture playButtonInactive;
+
 
     private BitmapFont font;
 
@@ -38,6 +41,8 @@ public class DeathMenu implements Screen {
         MainmenuActive = new Texture("ui/mainmenuActive.png");
         exitButtonActive = new Texture("ui/exitButtonActive.png");
         exitButtonInactive = new Texture("ui/exitButtonInactive.png");
+        playButtonActive = new Texture("ui/playButtonActive.png");
+        playButtonInactive = new Texture("ui/playButtonInactive.png");
     }
 
     @Override
@@ -57,6 +62,17 @@ public class DeathMenu implements Screen {
         font.getData().setScale(2);
 
         game.dispose();
+
+        if(Gdx.input.getX() > x && Gdx.input.getX() < x + playwidth && Gdx.input.getY() > y - playy - playheight && Gdx.input.getY() < y - playy) {
+            game.batch.draw(playButtonActive, x, playy, playwidth, playheight);
+            if (Gdx.input.isTouched()){
+                this.dispose();
+                game.setScreen(new Trebuchet(game));
+            }
+        }else {
+            game.batch.draw(playButtonInactive, x, playy, playwidth, playheight);
+        }
+
         if(Gdx.input.getX() > 1250 && Gdx.input.getX() < 1250 + 300 && Gdx.input.getY() > 800 - 100 - 100 && Gdx.input.getY() < 800 - 100) {
             game.batch.draw(MainmenuActive,1250,100,300,100);
             if (Gdx.input.isTouched()){
@@ -66,14 +82,6 @@ public class DeathMenu implements Screen {
             game.batch.draw(Mainmenu,1250,100,300,100);
         }
 
-        if(Gdx.input.getX() > x && Gdx.input.getX() < x + exitwidth && Gdx.input.getY() > y - exity - exitheight && Gdx.input.getY() < y - exity) {
-            game.batch.draw(exitButtonActive, x, exity, exitwidth, exitheight);
-            if (Gdx.input.isTouched()){
-                Gdx.app.exit();
-            }
-        }else {
-            game.batch.draw(exitButtonInactive, x, exity, exitwidth, exitheight);
-        }
         game.batch.end();
 
     }

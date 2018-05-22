@@ -2,63 +2,19 @@
 <project version="4">
   <component name="BookmarkManager">
     <bookmark url="file://$PROJECT_DIR$/desktop/src/com/mygdx/game/desktop/DesktopLauncher.java" line="14" />
-    <bookmark url="file://$PROJECT_DIR$/core/src/world/gamemap.java" line="82" mnemonic="7" />
+    <bookmark url="file://$PROJECT_DIR$/core/src/world/gamemap.java" line="100" mnemonic="7" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9e6295b2-49b3-4570-844e-93e66c6a1335" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/assets/CannonLeft.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/assets/CannonRight.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/assets/Cannonball.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/assets/EnemyCatapultLeft.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/assets/EnemyCatapultRight.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/assets/FollowNPCLeft.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/assets/FollowNPCRight.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/assets/Graphics.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/assets/High.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/assets/HighActive.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/assets/Highscore.txt" beforeDir="false" afterPath="$PROJECT_DIR$/core/assets/Highscore.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/assets/Low.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/assets/LowActive.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/assets/Mainmenu.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/assets/MainmenuActive.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/assets/Settings.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/assets/SettingsActive.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/assets/Victory.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/assets/cheap_tiles.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/assets/empty_hearth.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/assets/exitButtonActive.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/assets/exitButtonInactive.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/assets/full_hearth.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/assets/head.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/assets/map.tmx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/assets/map1.tmx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/assets/map1Low.tmx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/assets/map2.tmx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/assets/map2Low.tmx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/assets/mapLow.tmx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/assets/misteliv.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/assets/onfflame2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/assets/onflame_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/assets/playButtonActive.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/assets/playButtonInactive.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/assets/playerRollLeft.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/assets/playerRollLeft1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/assets/playerRollRight.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/assets/playerRollRight1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/assets/tiles.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/assets/you_died.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/Entities/Cannonball.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/Entities/Cannonball.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/Entities/FollowNPC.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/Entities/FollowNPC.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/Entities/NPC.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/Entities/NPC.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/Entities/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/Entities/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/Entities/ShootNPC.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/Entities/ShootNPC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/out/production/classes/com/mygdx/game/DeathMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/out/production/classes/com/mygdx/game/DeathMenu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/out/production/classes/com/mygdx/game/GameEnd.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/out/production/classes/com/mygdx/game/GameEnd.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/out/production/classes/com/mygdx/game/Setting.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/out/production/classes/com/mygdx/game/Setting.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/out/production/classes/world/gamemap.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/out/production/classes/world/gamemap.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/src/com/mygdx/game/DeathMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/com/mygdx/game/DeathMenu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/src/com/mygdx/game/GameEnd.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/com/mygdx/game/GameEnd.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/src/com/mygdx/game/Setting.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/com/mygdx/game/Setting.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/com/mygdx/game/Trebuchet.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/com/mygdx/game/Trebuchet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/com/mygdx/game/mainMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/com/mygdx/game/mainMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/world/TiledGameMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/world/TiledGameMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/world/gamemap.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/world/gamemap.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -85,22 +41,14 @@
       <file leaf-file-name="gamemap.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/src/world/gamemap.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-501">
-              <caret line="26" column="22" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
+            <state relative-caret-position="465">
+              <caret line="31" column="40" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DeathMenu.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/DeathMenu.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-450">
-              <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
-              <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#3791#3792#0" expanded="true" />
+                <element signature="e#3850#3851#0" expanded="true" />
+                <element signature="e#3884#3885#0" expanded="true" />
+                <element signature="e#3944#3945#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -109,8 +57,8 @@
       <file leaf-file-name="Dying.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/Dying.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+            <state relative-caret-position="285">
+              <caret line="19" selection-start-line="19" selection-end-line="19" />
             </state>
           </provider>
         </entry>
@@ -118,8 +66,8 @@
       <file leaf-file-name="GameEnd.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/GameEnd.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="29" column="34" selection-start-line="29" selection-start-column="34" selection-end-line="29" selection-end-column="34" />
+            <state relative-caret-position="1029">
+              <caret line="94" column="39" lean-forward="true" selection-start-line="94" selection-start-column="39" selection-end-line="94" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -127,8 +75,20 @@
       <file leaf-file-name="mainMenu.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/mainMenu.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="30" column="22" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
+            <state relative-caret-position="214">
+              <caret line="73" selection-start-line="73" selection-end-line="81" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DeathMenu.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/DeathMenu.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1095">
+              <caret line="73" column="9" selection-start-line="73" selection-start-column="9" selection-end-line="73" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -136,7 +96,7 @@
       <file leaf-file-name="TiledGameMap.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/src/world/TiledGameMap.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-76">
+            <state relative-caret-position="55">
               <caret line="36" column="57" selection-start-line="36" selection-start-column="57" selection-end-line="36" selection-end-column="57" />
             </state>
           </provider>
@@ -145,8 +105,8 @@
       <file leaf-file-name="Setting.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/Setting.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="366">
-              <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
+            <state relative-caret-position="96">
+              <caret line="31" column="44" lean-forward="true" selection-start-line="31" selection-start-column="44" selection-end-line="31" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -158,7 +118,7 @@
         <entry file="file://$PROJECT_DIR$/core/src/world/TileType.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="451">
-              <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+              <caret line="33" selection-start-line="33" selection-end-line="33" />
               <folding>
                 <element signature="e#714#715#0" expanded="true" />
                 <element signature="e#739#740#0" expanded="true" />
@@ -172,12 +132,10 @@
       <file leaf-file-name="Player.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/src/Entities/Player.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1870">
-              <caret line="112" lean-forward="true" selection-start-line="112" selection-end-line="112" />
+            <state relative-caret-position="1650">
+              <caret line="112" selection-start-line="112" selection-end-line="112" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#3439#3440#0" expanded="true" />
-                <element signature="e#3511#3512#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -186,7 +144,7 @@
       <file leaf-file-name="ShootNPC.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/src/Entities/ShootNPC.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
+            <state relative-caret-position="120">
               <caret line="8" selection-start-line="8" selection-end-line="8" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -810,7 +768,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="10689142876993" />
+        <entry key="$PROJECT_DIR$" value="10688345598000" />
         <entry key="$PROJECT_DIR$/.gradle" value="0" />
         <entry key="$PROJECT_DIR$/build.gradle" value="870102429" />
         <entry key="$PROJECT_DIR$/core/build.gradle" value="2971590108" />
@@ -1009,8 +967,8 @@
     </option>
     <option name="projectSyncType">
       <map>
-        <entry key="$PROJECT_DIR$" value="RE_IMPORT" />
         <entry key="$USER_HOME$/Downloads/test" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$" value="RE_IMPORT" />
       </map>
     </option>
   </component>
@@ -1040,12 +998,9 @@
         <option value="$PROJECT_DIR$/core/assets/Highscore.txt" />
         <option value="$PROJECT_DIR$/core/src/com/mygdx/game/Dying.java" />
         <option value="$PROJECT_DIR$/core/src/world/gamemap.java" />
-        <option value="$PROJECT_DIR$/core/src/world/gamemap.java" />
         <option value="$PROJECT_DIR$/core/assets/mapLow.tmx" />
         <option value="$PROJECT_DIR$/core/assets/map2Low.tmx" />
         <option value="$PROJECT_DIR$/core/assets/map1Low.tmx" />
-        <option value="$PROJECT_DIR$/core/src/com/mygdx/game/DeathMenu.java" />
-        <option value="$PROJECT_DIR$/core/src/com/mygdx/game/GameEnd.java" />
         <option value="$PROJECT_DIR$/core/src/com/mygdx/game/Trebuchet.java" />
         <option value="$PROJECT_DIR$/core/src/Entities/Cannonball.java" />
         <option value="$PROJECT_DIR$/core/src/Entities/FollowNPC.java" />
@@ -1054,7 +1009,10 @@
         <option value="$PROJECT_DIR$/core/src/Entities/ShootNPC.java" />
         <option value="$PROJECT_DIR$/core/src/world/TiledGameMap.java" />
         <option value="$PROJECT_DIR$/core/src/com/mygdx/game/mainMenu.java" />
+        <option value="$PROJECT_DIR$/core/src/world/gamemap.java" />
         <option value="$PROJECT_DIR$/core/src/com/mygdx/game/Setting.java" />
+        <option value="$PROJECT_DIR$/core/src/com/mygdx/game/GameEnd.java" />
+        <option value="$PROJECT_DIR$/core/src/com/mygdx/game/DeathMenu.java" />
       </list>
     </option>
   </component>
@@ -1067,11 +1025,10 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="877" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -1081,7 +1038,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -1144,7 +1101,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1295,14 +1252,15 @@
       <workItem from="1526995792421" duration="146000" />
       <workItem from="1527011997619" duration="8130000" />
       <workItem from="1527020424099" duration="701000" />
+      <workItem from="1527021403416" duration="394000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="134452000" />
+    <option name="totallyTimeSpent" value="134846000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="0" y="23" width="1440" height="877" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -1314,13 +1272,14 @@
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50073206" side_tool="true" weight="0.3290938" />
       <window_info anchor="right" id="Maven Projects" order="5" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3134963" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.31257784" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.32897604" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15625" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.15625" />
       <window_info anchor="right" id="Database" order="7" />
+      <window_info id="Learn" order="7" />
       <window_info anchor="right" id="Gradle" order="6" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -1329,14 +1288,46 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Build" order="10" sideWeight="0.49926794" weight="0.32943678" />
-      <window_info id="Learn" order="7" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32965517" />
     </layout>
+    <layout-to-restore>
+      <window_info anchor="bottom" id="Build" order="10" sideWeight="0.49926794" weight="0.32943678" />
+      <window_info id="Designer" order="2" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info id="Image Layers" order="6" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.31257784" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" order="3" />
+      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50073206" side_tool="true" weight="0.3290938" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.23804463" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32965517" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="11" weight="0.32897604" />
+      <window_info anchor="right" id="Maven Projects" order="5" />
+      <window_info anchor="right" id="Gradle" order="6" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15625" />
+      <window_info id="Learn" order="7" />
+      <window_info anchor="right" id="Database" order="7" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="9" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -1424,34 +1415,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/assets/map2Low.tmx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/assets/map1Low.tmx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/assets/mapLow.tmx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/assets/map.tmx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="11" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/core/assets/map2Low.tmx" />
+    <entry file="file://$PROJECT_DIR$/core/assets/map1Low.tmx" />
+    <entry file="file://$PROJECT_DIR$/core/assets/mapLow.tmx" />
+    <entry file="file://$PROJECT_DIR$/core/assets/map.tmx" />
     <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/Trebuchet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-569">
@@ -1516,7 +1483,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/core/src/Entities/ShootNPC.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
+        <state relative-caret-position="120">
           <caret line="8" selection-start-line="8" selection-end-line="8" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1524,10 +1491,62 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/Entities/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1650">
+          <caret line="112" selection-start-line="112" selection-end-line="112" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/Dying.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/core/src/world/gamemap.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-501">
-          <caret line="26" column="22" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
+        <state relative-caret-position="465">
+          <caret line="31" column="40" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3791#3792#0" expanded="true" />
+            <element signature="e#3850#3851#0" expanded="true" />
+            <element signature="e#3884#3885#0" expanded="true" />
+            <element signature="e#3944#3945#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/world/TiledGameMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="55">
+          <caret line="36" column="57" selection-start-line="36" selection-start-column="57" selection-end-line="36" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/GameEnd.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1029">
+          <caret line="94" column="39" lean-forward="true" selection-start-line="94" selection-start-column="39" selection-end-line="94" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/mainMenu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="73" selection-start-line="73" selection-end-line="81" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/DeathMenu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1095">
+          <caret line="73" column="9" selection-start-line="73" selection-start-column="9" selection-end-line="73" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1537,7 +1556,7 @@
     <entry file="file://$PROJECT_DIR$/core/src/world/TileType.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="451">
-          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
           <folding>
             <element signature="e#714#715#0" expanded="true" />
             <element signature="e#739#740#0" expanded="true" />
@@ -1547,60 +1566,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/Entities/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1870">
-          <caret line="112" lean-forward="true" selection-start-line="112" selection-end-line="112" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3439#3440#0" expanded="true" />
-            <element signature="e#3511#3512#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/DeathMenu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-450">
-          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/Dying.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/GameEnd.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="29" column="34" selection-start-line="29" selection-start-column="34" selection-end-line="29" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/world/TiledGameMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-76">
-          <caret line="36" column="57" selection-start-line="36" selection-start-column="57" selection-end-line="36" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/mainMenu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="30" column="22" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/game/Setting.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
+        <state relative-caret-position="96">
+          <caret line="31" column="44" lean-forward="true" selection-start-line="31" selection-start-column="44" selection-end-line="31" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

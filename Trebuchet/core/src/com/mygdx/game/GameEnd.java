@@ -16,6 +16,7 @@ public class GameEnd implements Screen {
     Texture Victory;
     Texture Mainmenu;
     Texture MainmenuActive;
+
     public FileReader fileReader;
     public BufferedReader bufferedReader;
     public FileWriter fileWriter;
@@ -30,6 +31,7 @@ public class GameEnd implements Screen {
         Victory = new Texture("ui/victory.png");
         Mainmenu = new Texture("ui/mainmenu.png");
         MainmenuActive = new Texture("ui/mainmenuActive.png");
+
         try {
             fileReader = new FileReader("Highscore.txt");
             bufferedReader = new BufferedReader(fileReader);
@@ -96,6 +98,8 @@ public class GameEnd implements Screen {
         }else {
             game.batch.draw(Mainmenu,1250,100,300,100);
         }
+
+
         game.batch.end();
 
     }
