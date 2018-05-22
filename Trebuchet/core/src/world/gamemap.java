@@ -26,12 +26,12 @@ public abstract class gamemap {
         entities = new ArrayList<Entity>();
         entities.add(new Player(1, 340, this));
         if (map1 == 0) {
-            lives = 4 - Setting.vansklighetsgrad;
+            lives = 4 - Setting.vanskelighetsgrad;
 
             entities.add(new NPC(248, 370, this));
-            if(Setting.vansklighetsgrad > 1) {
+            if(Setting.vanskelighetsgrad > 1) {
                 entities.add(new NPC(1050, 370, this));
-                if (Setting.vansklighetsgrad > 2)
+                if (Setting.vanskelighetsgrad > 2)
                     entities.add(new NPC(1334, 500, this));
             }
         }
@@ -39,10 +39,10 @@ public abstract class gamemap {
             entities.add(new FollowNPC(760, 417, this));
 
 
-            if (Setting.vansklighetsgrad > 1) {
+            if (Setting.vanskelighetsgrad > 1) {
                 entities.add(new NPC(312, 340, this));
 
-                if (Setting.vansklighetsgrad > 2) {
+                if (Setting.vanskelighetsgrad > 2) {
                     entities.add(new NPC(810, 195, this));
                     entities.add(new NPC(1325, 340, this));
                 }
@@ -52,10 +52,10 @@ public abstract class gamemap {
             entities.add(new NPC(248, 370, this));
             entities.add(new ShootNPC(560, 530, this));
 
-            if (Setting.vansklighetsgrad > 1) {
+            if (Setting.vanskelighetsgrad > 1) {
                 entities.add(new NPC(870, 370, this));
 
-                if (Setting.vansklighetsgrad >2)
+                if (Setting.vanskelighetsgrad >2)
                     entities.add(new NPC(1200, 370, this));
             }
 

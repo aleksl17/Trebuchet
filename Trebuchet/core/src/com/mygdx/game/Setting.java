@@ -37,7 +37,7 @@ public class Setting implements Screen {
     private static final int emhwidth = 300;
     private static final int emhy = 225;
     public static boolean graphicisHigh = true;
-    public static int vansklighetsgrad = 1;
+    public static int vanskelighetsgrad = 1;
 
     public Setting(TrebuchetGame game) {
         this.game = game;
@@ -128,32 +128,32 @@ public class Setting implements Screen {
         }
         game.batch.draw(Difficulty, x, emhy, graphicwidth, buttonheight);
         if(Gdx.input.getX() > HighLowx && Gdx.input.getX() < HighLowx + emhwidth && Gdx.input.getY() > y - emhy - buttonheight && Gdx.input.getY() < y - emhy) {
-            if (vansklighetsgrad == 1){
+            if (vanskelighetsgrad == 1){
                 game.batch.draw(EasyActive, HighLowx, emhy, emhwidth, buttonheight);
-            }else if(vansklighetsgrad == 2){
+            }else if(vanskelighetsgrad == 2){
                 game.batch.draw(MediumActive, HighLowx, emhy, emhwidth, buttonheight);
-            }else if(vansklighetsgrad == 3){
+            }else if(vanskelighetsgrad == 3){
                 game.batch.draw(HardActive, HighLowx, emhy, emhwidth, buttonheight);
             }
             if (Gdx.input.isTouched()){
                 this.dispose();
-                if(vansklighetsgrad == 1) {
-                    vansklighetsgrad = 2;
+                if(vanskelighetsgrad == 1) {
+                    vanskelighetsgrad = 2;
                     try {
                         Thread.sleep(200);
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
-                }else if (vansklighetsgrad == 2){
-                    vansklighetsgrad = 3;
+                }else if (vanskelighetsgrad == 2){
+                    vanskelighetsgrad = 3;
                     try {
                         Thread.sleep(200);
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
                 }
-                else if (vansklighetsgrad == 3){
-                    vansklighetsgrad = 1;
+                else if (vanskelighetsgrad == 3){
+                    vanskelighetsgrad = 1;
                     try {
                         Thread.sleep(200);
                     } catch (InterruptedException e) {
@@ -162,11 +162,11 @@ public class Setting implements Screen {
                 }
             }
         }else {
-            if(vansklighetsgrad == 1){
+            if(vanskelighetsgrad == 1){
                 game.batch.draw(Easy, HighLowx, emhy, emhwidth, buttonheight);
-            }else if(vansklighetsgrad == 2){
+            }else if(vanskelighetsgrad == 2){
                 game.batch.draw(Medium, HighLowx, emhy, emhwidth, buttonheight);
-            }else if(vansklighetsgrad == 3){
+            }else if(vanskelighetsgrad == 3){
                 game.batch.draw(Hard, HighLowx, emhy, emhwidth, buttonheight);
             }
 

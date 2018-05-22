@@ -7,8 +7,6 @@ import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
 
-import java.io.*;
-
 import static Entities.Player.map1;
 
 public class DeathMenu implements Screen {
@@ -68,6 +66,7 @@ public class DeathMenu implements Screen {
             if (Gdx.input.isTouched()){
                 this.dispose();
                 game.setScreen(new Trebuchet(game));
+                Dying.setLives(4-Setting.vanskelighetsgrad);
             }
         }else {
             game.batch.draw(playButtonInactive, x, playy, playwidth, playheight);
