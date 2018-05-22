@@ -27,7 +27,7 @@ public class Dying {
         Dying.tuch_lava = tuch_lava;
     }
 
-    public boolean isIDead() {
+    public static boolean isIDead() {
         return isDead;
     }
 

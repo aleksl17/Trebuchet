@@ -5,6 +5,7 @@ import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.OrthographicCamera;
+import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import world.TiledGameMap;
@@ -20,6 +21,9 @@ public class Trebuchet implements Screen {
     gamemap gameMap;
     private BitmapFont font;
 
+    Texture full_hearth;
+    Texture empty_hearth;
+
 
     float w = Gdx.graphics.getWidth();
     float h = Gdx.graphics.getHeight();
@@ -27,6 +31,8 @@ public class Trebuchet implements Screen {
 
     public Trebuchet(TrebuchetGame game) {
         this.game = game;
+        full_hearth = new Texture("full_hearth.png");
+        empty_hearth = new Texture("empty_hearth.png");
     }
 
     @Override
@@ -61,6 +67,28 @@ public class Trebuchet implements Screen {
         font.setColor(Color.BLACK);
         font.draw(batch, "Fps: " + (float)Gdx.graphics.getFramesPerSecond(), 10, h-10);
         font.draw(batch,"Time: " + ((System.currentTimeMillis() - startTime) / 1000),100,h-10);
+
+
+        if (Dying.getLives()  >= 1) {
+            batch.draw(full_hearth, TrebuchetGame.WIDTH - 35, TrebuchetGame.HEIGHT - 20);
+
+            if (Dying.getLives() >= 2){
+                batch.draw(full_hearth, TrebuchetGame.WIDTH - (35 + 16 + 10), TrebuchetGame.HEIGHT - 20);
+
+                if (Dying.getLives() == 3){
+                    batch.draw(full_hearth, TrebuchetGame.WIDTH - (35 + 32 + 20), TrebuchetGame.HEIGHT - 20);
+                }
+                else {batch.draw(empty_hearth, TrebuchetGame.WIDTH - (35 + 32 + 20), TrebuchetGame.HEIGHT - 20);}
+            }
+            else { batch.draw(empty_hearth, TrebuchetGame.WIDTH - (35 + 16 + 10), TrebuchetGame.HEIGHT - 20);
+                batch.draw(empty_hearth, TrebuchetGame.WIDTH - (35 + 32 + 20), TrebuchetGame.HEIGHT - 20);}
+        }
+
+
+
+
+
+
         batch.end();
     }
 

@@ -8,7 +8,6 @@ import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import static Entities.Player.map1;
 
 public class TrebuchetGame extends Game {
-    Dying d = new Dying();
 
     public static final int WIDTH = 1600;
     public static final int HEIGHT = 800;
@@ -35,11 +34,11 @@ public class TrebuchetGame extends Game {
             Trebuchet.startTime = System.currentTimeMillis();
         }
 
-        if (d.isIDead()) {
+        if (Dying.isIDead()) {
             this.setScreen(new DeathMenu(this));
             map1=0;
             Trebuchet.startTime = System.currentTimeMillis();
-            d.setDead(false);
+            Dying.setDead(false);
         }
         super.render();
     }
