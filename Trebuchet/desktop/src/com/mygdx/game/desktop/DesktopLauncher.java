@@ -8,7 +8,7 @@ import com.mygdx.game.TrebuchetGame;
 public class DesktopLauncher {
 	public static void main (String[] arg) {
 		LwjglApplicationConfiguration config = new LwjglApplicationConfiguration();
-		config.vSyncEnabled = false;
+		config.vSyncEnabled = true;
 		config.foregroundFPS = 60; //pcmasterrace
 		config.width = TrebuchetGame.WIDTH;
 		config.height = TrebuchetGame.HEIGHT;

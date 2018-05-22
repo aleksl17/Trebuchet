@@ -12,6 +12,7 @@ import com.mygdx.game.Dying;
 import java.util.ArrayList;
 
 import static Entities.Player.map1;
+import static com.mygdx.game.Dying.lives;
 
 public abstract class gamemap {
     Dying d = new Dying();
@@ -23,6 +24,7 @@ public abstract class gamemap {
         entities = new ArrayList<Entity>();
         entities.add(new Player(1, 340, this));
         if (map1 == 0) {
+            lives = 3;
             entities.add(new NPC(248, 370, this));
             entities.add(new NPC(1050, 370, this));
             entities.add(new NPC(1334, 500, this));
