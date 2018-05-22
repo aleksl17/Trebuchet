@@ -69,6 +69,12 @@ public class GameEnd implements Screen {
         if (map1 == 5) {
             EndTime = ((System.currentTimeMillis() - Trebuchet.startTime) / 1000);
             score -= EndTime;
+            if(Setting.vanskelighetsgrad == 2){
+                score += 5;
+            }
+            if(Setting.vanskelighetsgrad == 3){
+                score += 10;
+            }
             if(Highscore < score) {
                 Highscore = score;
                 try {

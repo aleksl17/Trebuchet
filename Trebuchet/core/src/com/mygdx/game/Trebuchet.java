@@ -11,6 +11,7 @@ import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import world.TiledGameMap;
 import world.gamemap;
 import static Entities.Player.map1;
+import static world.gamemap.burn;
 
 public class Trebuchet implements Screen {
 
@@ -29,6 +30,7 @@ public class Trebuchet implements Screen {
         this.game = game;
         full_hearth = new Texture("ui/full_hearth.png");
         empty_hearth = new Texture("ui/empty_hearth.png");
+        burn = false;
     }
 
     @Override
