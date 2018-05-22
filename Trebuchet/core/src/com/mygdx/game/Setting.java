@@ -5,7 +5,6 @@ import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.Texture;
 
-import static Entities.Player.map1;
 import static com.mygdx.game.mainMenu.animasjon;
 import static com.mygdx.game.mainMenu.tid;
 
@@ -20,6 +19,13 @@ public class Setting implements Screen {
     Texture LowActive;
     Texture Mainmenu;
     Texture MainmenuActive;
+    Texture Difficulty;
+    Texture Easy;
+    Texture EasyActive;
+    Texture Medium;
+    Texture MediumActive;
+    Texture Hard;
+    Texture HardActive;
 
     private static final int x = TrebuchetGame.WIDTH / 2 - 200 / 2;
     private static final int y = TrebuchetGame.HEIGHT;
@@ -28,20 +34,30 @@ public class Setting implements Screen {
     private static final int buttonheight = 100;
     private static final int HighLowx = x + 400;
     private static final int HighLowwidth = 200;
+    private static final int emhwidth = 300;
+    private static final int emhy = 225;
     public static boolean graphicisHigh = true;
-    public static int vanskelighetsgrad = 1;
+    public static int vansklighetsgrad = 1;
 
     public Setting(TrebuchetGame game) {
         this.game = game;
         head = new Texture("ui/head.png");
         mainplayer = new Texture("entities/playerRollRight.png");
-        graphic = new Texture("ui/graphics.png");
-        High = new Texture("ui/high.png");
-        HighActive = new Texture("ui/highActive.png");
-        Low = new Texture("ui/low.png");
-        LowActive = new Texture("ui/lowActive.png");
-        Mainmenu = new Texture("ui/mainmenu.png");
-        MainmenuActive = new Texture("ui/mainmenuActive.png");
+        graphic = new Texture("ui/Graphics.png");
+        High = new Texture("ui/High.png");
+        HighActive = new Texture("ui/HighActive.png");
+        Low = new Texture("ui/Low.png");
+        LowActive = new Texture("ui/LowActive.png");
+        Mainmenu = new Texture("ui/Mainmenu.png");
+        MainmenuActive = new Texture("ui/MainmenuActive.png");
+        Difficulty = new Texture("ui/Difficulty.png");
+        Easy = new Texture("ui/Easy.png");
+        EasyActive = new Texture("ui/EasyActive.png");
+        Medium = new Texture("ui/Medium.png");
+        MediumActive = new Texture("ui/MediumActive.png");
+        Hard = new Texture("ui/Hard.png");
+        HardActive = new Texture("ui/HardActive.png");
+
     }
 
     @Override
@@ -89,14 +105,14 @@ public class Setting implements Screen {
                 if(graphicisHigh) {
                     graphicisHigh = false;
                     try {
-                        Thread.sleep(200);
+                        Thread.sleep(100);
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
                 }else{
                     graphicisHigh = true;
                     try {
-                        Thread.sleep(200);
+                        Thread.sleep(100);
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
@@ -107,6 +123,51 @@ public class Setting implements Screen {
                 game.batch.draw(High, HighLowx, graphicy, HighLowwidth, buttonheight);
             }else{
                 game.batch.draw(Low, HighLowx, graphicy, HighLowwidth, buttonheight);
+            }
+
+        }
+        game.batch.draw(Difficulty, x, emhy, graphicwidth, buttonheight);
+        if(Gdx.input.getX() > HighLowx && Gdx.input.getX() < HighLowx + emhwidth && Gdx.input.getY() > y - emhy - buttonheight && Gdx.input.getY() < y - emhy) {
+            if (vansklighetsgrad == 1){
+                game.batch.draw(EasyActive, HighLowx, emhy, emhwidth, buttonheight);
+            }else if(vansklighetsgrad == 2){
+                game.batch.draw(MediumActive, HighLowx, emhy, emhwidth, buttonheight);
+            }else if(vansklighetsgrad == 3){
+                game.batch.draw(HardActive, HighLowx, emhy, emhwidth, buttonheight);
+            }
+            if (Gdx.input.isTouched()){
+                this.dispose();
+                if(vansklighetsgrad == 1) {
+                    vansklighetsgrad = 2;
+                    try {
+                        Thread.sleep(200);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                }else if (vansklighetsgrad == 2){
+                    vansklighetsgrad = 3;
+                    try {
+                        Thread.sleep(200);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                }
+                else if (vansklighetsgrad == 3){
+                    vansklighetsgrad = 1;
+                    try {
+                        Thread.sleep(200);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                }
+            }
+        }else {
+            if(vansklighetsgrad == 1){
+                game.batch.draw(Easy, HighLowx, emhy, emhwidth, buttonheight);
+            }else if(vansklighetsgrad == 2){
+                game.batch.draw(Medium, HighLowx, emhy, emhwidth, buttonheight);
+            }else if(vansklighetsgrad == 3){
+                game.batch.draw(Hard, HighLowx, emhy, emhwidth, buttonheight);
             }
 
         }

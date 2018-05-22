@@ -78,11 +78,11 @@ public class Trebuchet implements Screen {
                 if (Dying.getLives() == 3){
                     batch.draw(full_hearth, TrebuchetGame.WIDTH - (35 + 32 + 20), TrebuchetGame.HEIGHT - 20);
                 }
-                else if (Setting.vanskelighetsgrad == 1){batch.draw(empty_hearth, TrebuchetGame.WIDTH - (35 + 32 + 20), TrebuchetGame.HEIGHT - 20);
+                else if (Setting.vansklighetsgrad == 1){batch.draw(empty_hearth, TrebuchetGame.WIDTH - (35 + 32 + 20), TrebuchetGame.HEIGHT - 20);
                     batch.draw(empty_hearth, TrebuchetGame.WIDTH - (35 + 32 + 20), TrebuchetGame.HEIGHT - 20);}
 
             }
-            else if (Setting.vanskelighetsgrad <= 2){ batch.draw(empty_hearth, TrebuchetGame.WIDTH - (35 + 16 + 10), TrebuchetGame.HEIGHT - 20);
+            else if (Setting.vansklighetsgrad <= 2){ batch.draw(empty_hearth, TrebuchetGame.WIDTH - (35 + 16 + 10), TrebuchetGame.HEIGHT - 20);
                 }
             batch.draw(empty_hearth, TrebuchetGame.WIDTH - (35 + 32 + 20), TrebuchetGame.HEIGHT - 20);
 
