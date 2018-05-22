@@ -4,28 +4,28 @@ import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.Texture;
-
 import static com.mygdx.game.mainMenu.animasjon;
 import static com.mygdx.game.mainMenu.tid;
 
 public class Setting implements Screen {
-    TrebuchetGame game;
-    Texture head;
-    Texture mainplayer;
-    Texture graphic;
-    Texture High;
-    Texture HighActive;
-    Texture Low;
-    Texture LowActive;
-    Texture Mainmenu;
-    Texture MainmenuActive;
-    Texture Difficulty;
-    Texture Easy;
-    Texture EasyActive;
-    Texture Medium;
-    Texture MediumActive;
-    Texture Hard;
-    Texture HardActive;
+
+    public TrebuchetGame game;
+    public Texture head;
+    public Texture mainplayer;
+    public Texture graphic;
+    public Texture High;
+    public Texture HighActive;
+    public Texture Low;
+    public Texture LowActive;
+    public Texture Mainmenu;
+    public Texture MainmenuActive;
+    public Texture Difficulty;
+    public Texture Easy;
+    public Texture EasyActive;
+    public Texture Medium;
+    public Texture MediumActive;
+    public Texture Hard;
+    public Texture HardActive;
 
     private static final int x = TrebuchetGame.WIDTH / 2 - 200 / 2;
     private static final int y = TrebuchetGame.HEIGHT;
@@ -57,13 +57,10 @@ public class Setting implements Screen {
         MediumActive = new Texture("ui/MediumActive.png");
         Hard = new Texture("ui/Hard.png");
         HardActive = new Texture("ui/HardActive.png");
-
     }
 
     @Override
-    public void show() {
-
-    }
+    public void show() {}
 
     @Override
     public void render(float delta) {
@@ -76,7 +73,8 @@ public class Setting implements Screen {
             if (animasjon) {
                 mainplayer = new Texture("entities/playerRollRight.png");
                 animasjon = false;
-            } else {
+            }
+            else {
                 mainplayer = new Texture("entities/playerRollRight1.png");
                 animasjon = true;
             }
@@ -86,117 +84,120 @@ public class Setting implements Screen {
         game.batch.draw(mainplayer,180,200,200,200);
         game.dispose();
         game.batch.draw(graphic, x, graphicy, graphicwidth, buttonheight);
-        if(Gdx.input.getX() > 1250 && Gdx.input.getX() < 1250 + 300 && Gdx.input.getY() > 800 - 100 - 100 && Gdx.input.getY() < 800 - 100) {
+        if (Gdx.input.getX() > 1250 && Gdx.input.getX() < 1250 + 300 && Gdx.input.getY() > 800 - 100 - 100 && Gdx.input.getY() < 800 - 100) {
             game.batch.draw(MainmenuActive,1250,100,300,100);
-            if (Gdx.input.isTouched()){
+            if (Gdx.input.isTouched()) {
                 game.setScreen(new mainMenu(game));
             }
-        }else {
+        }
+        else {
             game.batch.draw(Mainmenu,1250,100,300,100);
         }
-        if(Gdx.input.getX() > HighLowx && Gdx.input.getX() < HighLowx + HighLowwidth && Gdx.input.getY() > y - graphicy - buttonheight && Gdx.input.getY() < y - graphicy) {
+        if (Gdx.input.getX() > HighLowx && Gdx.input.getX() < HighLowx + HighLowwidth && Gdx.input.getY() > y - graphicy - buttonheight && Gdx.input.getY() < y - graphicy) {
             if (graphicisHigh){
                 game.batch.draw(HighActive, HighLowx, graphicy, HighLowwidth, buttonheight);
-            }else {
+            }
+            else {
                 game.batch.draw(LowActive, HighLowx, graphicy, HighLowwidth, buttonheight);
             }
-            if (Gdx.input.isTouched()){
+            if (Gdx.input.isTouched()) {
                 this.dispose();
-                if(graphicisHigh) {
+                if (graphicisHigh) {
                     graphicisHigh = false;
                     try {
                         Thread.sleep(100);
-                    } catch (InterruptedException e) {
+                    }
+                    catch (InterruptedException e) {
                         e.printStackTrace();
                     }
-                }else{
+                }
+                else {
                     graphicisHigh = true;
                     try {
                         Thread.sleep(100);
-                    } catch (InterruptedException e) {
+                    }
+                    catch (InterruptedException e) {
                         e.printStackTrace();
                     }
                 }
             }
-        }else {
-            if(graphicisHigh){
+        }
+        else {
+            if (graphicisHigh) {
                 game.batch.draw(High, HighLowx, graphicy, HighLowwidth, buttonheight);
-            }else{
+            }
+            else {
                 game.batch.draw(Low, HighLowx, graphicy, HighLowwidth, buttonheight);
             }
-
         }
         game.batch.draw(Difficulty, x, emhy, graphicwidth, buttonheight);
-        if(Gdx.input.getX() > HighLowx && Gdx.input.getX() < HighLowx + emhwidth && Gdx.input.getY() > y - emhy - buttonheight && Gdx.input.getY() < y - emhy) {
-            if (vanskelighetsgrad == 1){
+        if (Gdx.input.getX() > HighLowx && Gdx.input.getX() < HighLowx + emhwidth && Gdx.input.getY() > y - emhy - buttonheight && Gdx.input.getY() < y - emhy) {
+            if (vanskelighetsgrad == 1) {
                 game.batch.draw(EasyActive, HighLowx, emhy, emhwidth, buttonheight);
-            }else if(vanskelighetsgrad == 2){
+            }
+            else if(vanskelighetsgrad == 2 ){
                 game.batch.draw(MediumActive, HighLowx, emhy, emhwidth, buttonheight);
-            }else if(vanskelighetsgrad == 3){
+            }
+            else if(vanskelighetsgrad == 3) {
                 game.batch.draw(HardActive, HighLowx, emhy, emhwidth, buttonheight);
             }
             if (Gdx.input.isTouched()){
                 this.dispose();
-                if(vanskelighetsgrad == 1) {
+                if (vanskelighetsgrad == 1) {
                     vanskelighetsgrad = 2;
                     try {
                         Thread.sleep(200);
-                    } catch (InterruptedException e) {
+                    }
+                    catch (InterruptedException e) {
                         e.printStackTrace();
                     }
-                }else if (vanskelighetsgrad == 2){
+                }
+                else if (vanskelighetsgrad == 2) {
                     vanskelighetsgrad = 3;
                     try {
                         Thread.sleep(200);
-                    } catch (InterruptedException e) {
+                    }
+                    catch (InterruptedException e) {
                         e.printStackTrace();
                     }
                 }
-                else if (vanskelighetsgrad == 3){
+                else if (vanskelighetsgrad == 3) {
                     vanskelighetsgrad = 1;
                     try {
                         Thread.sleep(200);
-                    } catch (InterruptedException e) {
+                    }
+                    catch (InterruptedException e) {
                         e.printStackTrace();
                     }
                 }
             }
-        }else {
-            if(vanskelighetsgrad == 1){
+        }
+        else {
+            if (vanskelighetsgrad == 1) {
                 game.batch.draw(Easy, HighLowx, emhy, emhwidth, buttonheight);
-            }else if(vanskelighetsgrad == 2){
+            }
+            else if(vanskelighetsgrad == 2) {
                 game.batch.draw(Medium, HighLowx, emhy, emhwidth, buttonheight);
-            }else if(vanskelighetsgrad == 3){
+            }
+            else if(vanskelighetsgrad == 3) {
                 game.batch.draw(Hard, HighLowx, emhy, emhwidth, buttonheight);
             }
-
         }
-
         game.batch.end();
     }
 
     @Override
-    public void resize(int width, int height) {
-
-    }
+    public void resize(int width, int height) {}
 
     @Override
-    public void pause() {
-
-    }
+    public void pause() {}
 
     @Override
-    public void resume() {
-
-    }
+    public void resume() {}
 
     @Override
-    public void hide() {
-
-    }
+    public void hide() {}
 
     @Override
-    public void dispose() {
-
-    }
+    public void dispose() {}
 }

@@ -53,7 +53,7 @@ public enum TileType {
         }
     }
 
-    public static TileType getTileTypeById(int id){
+    public static TileType getTileTypeById(int id) {
         return tileMap.get(id);
     }
 }

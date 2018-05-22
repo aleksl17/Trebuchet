@@ -18,20 +18,20 @@ public abstract class Entity {
         this.map = map;
     }
 
-    public void update (float deltaTime, float gravity){
+    public void update (float deltaTime, float gravity) {
         float newY = pos.y;
 
         this.velocityY += gravity * deltaTime * getWeight();
         newY += this.velocityY * deltaTime;
 
-        if (map.doesRectCollideWithMap(pos.x, newY, getWidth(), getHeight())){
+        if (map.doesRectCollideWithMap(pos.x, newY, getWidth(), getHeight())) {
             if(velocityY < 0){
             this.pos.y = (float) Math.floor(pos.y);
             grounded = true;
             }
             this.velocityY = 0;
         }
-        else{
+        else {
             this.pos.y = newY;
             grounded = false;
         }
@@ -41,8 +41,9 @@ public abstract class Entity {
 
     protected void moveX (float amount){
         float newX = pos.x + amount;
-        if (!map.doesRectCollideWithMap(newX, pos.y, getWidth(), getHeight()))
+        if (!map.doesRectCollideWithMap(newX, pos.y, getWidth(), getHeight())) {
             this.pos.x = newX;
+        }
     }
 
     public int getWidth(){

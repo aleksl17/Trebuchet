@@ -6,17 +6,16 @@ import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
-
 import java.io.*;
 
 import static Entities.Player.map1;
 
 public class GameEnd implements Screen {
-    TrebuchetGame game;
-    Texture Victory;
-    Texture Mainmenu;
-    Texture MainmenuActive;
 
+    public TrebuchetGame game;
+    public Texture Victory;
+    public Texture Mainmenu;
+    public Texture MainmenuActive;
     public FileReader fileReader;
     public BufferedReader bufferedReader;
     public FileWriter fileWriter;
@@ -26,7 +25,7 @@ public class GameEnd implements Screen {
     private long score = 100;
     private long Highscore;
 
-    public GameEnd(TrebuchetGame game){
+    public GameEnd(TrebuchetGame game) {
         this.game = game;
         Victory = new Texture("ui/victory.png");
         Mainmenu = new Texture("ui/mainmenu.png");
@@ -37,7 +36,8 @@ public class GameEnd implements Screen {
             bufferedReader = new BufferedReader(fileReader);
             try {
                 Highscore = Long.parseLong(bufferedReader.readLine());
-            }catch (NumberFormatException ex){
+            }
+            catch (NumberFormatException ex){
                 System.out.println("No Highscore");
                 Highscore = 0;
             }
@@ -54,9 +54,7 @@ public class GameEnd implements Screen {
     }
 
     @Override
-    public void show() {
-
-    }
+    public void show() {}
 
     @Override
     public void render(float delta) {
@@ -68,10 +66,10 @@ public class GameEnd implements Screen {
         font = new BitmapFont();
         font.setColor(Color.BLACK);
         font.getData().setScale(2);
-        if (map1 == 5){
+        if (map1 == 5) {
             EndTime = ((System.currentTimeMillis() - Trebuchet.startTime) / 1000);
             score -= EndTime;
-            if(Highscore < score){
+            if(Highscore < score) {
                 Highscore = score;
                 try {
                     fileWriter = new FileWriter("Highscore.txt");
@@ -90,42 +88,30 @@ public class GameEnd implements Screen {
         font.draw(game.batch, "Highscore: " + Highscore,750,350);
         font.draw(game.batch, "Score: " + score,750,300);
         game.dispose();
-        if(Gdx.input.getX() > 1250 && Gdx.input.getX() < 1250 + 300 && Gdx.input.getY() > 800 - 100 - 100 && Gdx.input.getY() < 800 - 100) {
+        if (Gdx.input.getX() > 1250 && Gdx.input.getX() < 1250 + 300 && Gdx.input.getY() > 800 - 100 - 100 && Gdx.input.getY() < 800 - 100) {
             game.batch.draw(MainmenuActive,1250,100,300,100);
-            if (Gdx.input.isTouched()){
+            if (Gdx.input.isTouched()) {
                 map1 = 7;
             }
         }else {
             game.batch.draw(Mainmenu,1250,100,300,100);
         }
 
-
         game.batch.end();
-
     }
 
     @Override
-    public void resize(int width, int height) {
-
-    }
+    public void resize(int width, int height) {}
 
     @Override
-    public void pause() {
-
-    }
+    public void pause() {}
 
     @Override
-    public void resume() {
-
-    }
+    public void resume() {}
 
     @Override
-    public void hide() {
-
-    }
+    public void hide() {}
 
     @Override
-    public void dispose() {
-
-    }
+    public void dispose() {}
 }

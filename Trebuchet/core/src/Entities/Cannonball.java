@@ -8,21 +8,18 @@ import world.gamemap;
 public class Cannonball extends Entity {
 
     private static final int SPEED = 180;
-
     public static Texture image;
 
-    public Cannonball(float x, float y, gamemap map){
+    public Cannonball(float x, float y, gamemap map) {
         super(x, y, EntityType.Cannonball, map);
         image = new Texture("entities/cannonball.png");
     }
 
     @Override
-    public void update(float deltaTime, float gravity){
+    public void update(float deltaTime, float gravity) {
         super.update(deltaTime, gravity);
-
         this.velocityY -=  deltaTime;
         moveX(-SPEED * deltaTime);
-
     }
 
     @Override
@@ -31,7 +28,7 @@ public class Cannonball extends Entity {
             batch.draw(image, pos.x, pos.y, getWidth(), getHeight());
         }
 
-        for (float i = 0; i < Player.getPlayerWidth; i++){
+        for (float i = 0; i < Player.getPlayerWidth; i++) {
             if (Player.getx + i > pos.x && Player.getx + i < pos.x + getWidth() && Player.gety + i > pos.y && Player.gety + i < pos.y + getHeight()){
                 Dying.got_hit();
             }

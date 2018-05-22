@@ -10,21 +10,17 @@ import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import world.TiledGameMap;
 import world.gamemap;
-
 import static Entities.Player.map1;
 
-
 public class Trebuchet implements Screen {
-    OrthographicCamera cam;
-    SpriteBatch batch;
-    TrebuchetGame game;
-    gamemap gameMap;
+
+    public OrthographicCamera cam;
+    public SpriteBatch batch;
+    public TrebuchetGame game;
+    public gamemap gameMap;
     private BitmapFont font;
-
-    Texture full_hearth;
-    Texture empty_hearth;
-
-
+    public Texture full_hearth;
+    public Texture empty_hearth;
     float w = Gdx.graphics.getWidth();
     float h = Gdx.graphics.getHeight();
     public static long startTime = System.currentTimeMillis();
@@ -50,11 +46,11 @@ public class Trebuchet implements Screen {
         Gdx.gl.glBlendFunc(GL20.GL_SRC_ALPHA, GL20.GL_ONE_MINUS_SRC_ALPHA);
         Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
 
-        if(map1 == 1){
+        if (map1 == 1) {
             gameMap = new TiledGameMap();
             map1 = 2;
         }
-        if(map1 == 3){
+        if (map1 == 3) {
             gameMap = new TiledGameMap();
             map1 = 4;
         }
@@ -68,49 +64,37 @@ public class Trebuchet implements Screen {
         font.draw(batch, "Fps: " + (float)Gdx.graphics.getFramesPerSecond(), 10, h-10);
         font.draw(batch,"Time: " + ((System.currentTimeMillis() - startTime) / 1000),100,h-10);
 
-
         if (Dying.getLives()  >= 1) {
             batch.draw(full_hearth, TrebuchetGame.WIDTH - 35, TrebuchetGame.HEIGHT - 20);
 
-            if (Dying.getLives() >= 2){
+            if (Dying.getLives() >= 2) {
                 batch.draw(full_hearth, TrebuchetGame.WIDTH - (35 + 16 + 10), TrebuchetGame.HEIGHT - 20);
 
-                if (Dying.getLives() == 3){
+                if (Dying.getLives() == 3) {
                     batch.draw(full_hearth, TrebuchetGame.WIDTH - (35 + 32 + 20), TrebuchetGame.HEIGHT - 20);
                 }
-                else if (Setting.vanskelighetsgrad == 1){batch.draw(empty_hearth, TrebuchetGame.WIDTH - (35 + 32 + 20), TrebuchetGame.HEIGHT - 20);
+                else if (Setting.vanskelighetsgrad == 1) {
+                    batch.draw(empty_hearth, TrebuchetGame.WIDTH - (35 + 32 + 20), TrebuchetGame.HEIGHT - 20);
                     batch.draw(empty_hearth, TrebuchetGame.WIDTH - (35 + 32 + 20), TrebuchetGame.HEIGHT - 20);
                 }
-
             }
             else if (Setting.vanskelighetsgrad == 2){ batch.draw(empty_hearth, TrebuchetGame.WIDTH - (35 + 16 + 10), TrebuchetGame.HEIGHT - 20);
                 }
-
         }
-
-
-
-
-
-
         batch.end();
     }
 
     @Override
-    public void resize(int width, int height) {
-    }
+    public void resize(int width, int height) {}
 
     @Override
-    public void pause() {
-    }
+    public void pause() {}
 
     @Override
-    public void resume() {
-    }
+    public void resume() {}
 
     @Override
-    public void hide() {
-    }
+    public void hide() {}
 
     @Override
     public void dispose() {

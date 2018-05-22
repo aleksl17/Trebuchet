@@ -8,18 +8,16 @@ import world.gamemap;
 public class FollowNPC extends Entity {
 
     private static final int SPEED = 40;
-
     public static Texture image;
 
-    public FollowNPC(float x, float y, gamemap map){
+    public FollowNPC(float x, float y, gamemap map) {
         super(x, y, EntityType.FollowNPC, map);
         image = new Texture("entities/followNPCLeft.png");
     }
 
     @Override
-    public void update(float deltaTime, float gravity){
+    public void update(float deltaTime, float gravity) {
         super.update(deltaTime, gravity);
-
         if (Player.getx > (pos.x-100) && Player.getx < (pos.x)) {
             image = new Texture("entities/followNPCLeft.png");
             moveX(-SPEED * deltaTime);
@@ -32,11 +30,12 @@ public class FollowNPC extends Entity {
 
     @Override
     public void render(SpriteBatch batch) {
-        if(gamemap.burn == true){}else {
+        if (gamemap.burn == true){}
+        else {
             batch.draw(image, pos.x, pos.y, getWidth(), getHeight());
         }
-        for (float i = 0; i < Player.getPlayerWidth; i++){
-            if (Player.getx + i > pos.x && Player.getx + i < pos.x + getWidth() && Player.gety + i > pos.y && Player.gety + i < pos.y + getHeight()){
+        for (float i = 0; i < Player.getPlayerWidth; i++) {
+            if (Player.getx + i > pos.x && Player.getx + i < pos.x + getWidth() && Player.gety + i > pos.y && Player.gety + i < pos.y + getHeight()) {
                 Dying.got_hit();
             }
         }

@@ -25,10 +25,10 @@ public class TrebuchetGame extends Game {
         if (Gdx.input.isKeyPressed(Input.Keys.ESCAPE)) {
             this.setScreen(new mainMenu(this));
         }
-        if (map1 == 5){
+        if (map1 == 5) {
             this.setScreen(new GameEnd(this));
         }
-        if (map1 == 7){
+        if (map1 == 7) {
             this.setScreen(new mainMenu(this));
             map1=0;
             Trebuchet.startTime = System.currentTimeMillis();

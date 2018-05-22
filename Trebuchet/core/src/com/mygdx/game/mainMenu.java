@@ -17,22 +17,20 @@ public class mainMenu implements Screen {
     private static final int playy = 350;
     private static final int x = TrebuchetGame.WIDTH / 2 - exitwidth / 2;
     private static final int y = TrebuchetGame.HEIGHT;
-
     public static boolean animasjon = true;
     public static int tid = 100;
 
-    TrebuchetGame game;
+    public TrebuchetGame game;
+    public Texture head;
+    public Texture playButtonActive;
+    public Texture playButtonInactive;
+    public Texture exitButtonActive;
+    public Texture exitButtonInactive;
+    public Texture mainplayer;
+    public Texture settings;
+    public Texture settingsActive;
 
-    Texture head;
-    Texture playButtonActive;
-    Texture playButtonInactive;
-    Texture exitButtonActive;
-    Texture exitButtonInactive;
-    Texture mainplayer;
-    Texture settings;
-    Texture settingsActive;
-
-    public mainMenu (TrebuchetGame game){
+    public mainMenu(TrebuchetGame game) {
         this.game = game;
         head = new Texture("ui/head.png");
         mainplayer = new Texture("entities/playerRollRight.png");
@@ -42,13 +40,10 @@ public class mainMenu implements Screen {
         exitButtonInactive = new Texture("ui/exitButtonInactive.png");
         settings = new Texture("ui/settings.png");
         settingsActive = new Texture("ui/settingsActive.png");
-
     }
 
     @Override
-    public void show() {
-
-    }
+    public void show() {}
 
     @Override
     public void render(float delta) {
@@ -61,7 +56,8 @@ public class mainMenu implements Screen {
             if (animasjon == true) {
                 mainplayer = new Texture("entities/playerRollRight.png");
                 animasjon = false;
-            } else {
+            }
+            else {
                 mainplayer = new Texture("entities/playerRollRight1.png");
                 animasjon = true;
             }
@@ -71,44 +67,42 @@ public class mainMenu implements Screen {
         game.batch.draw(mainplayer,180,200,200,200);
 
         game.dispose();
-        if(Gdx.input.getX() > x && Gdx.input.getX() < x + playwidth && Gdx.input.getY() > y - playy - playheight && Gdx.input.getY() < y - playy) {
+        if (Gdx.input.getX() > x && Gdx.input.getX() < x + playwidth && Gdx.input.getY() > y - playy - playheight && Gdx.input.getY() < y - playy) {
             game.batch.draw(playButtonActive, x, playy, playwidth, playheight);
-            if (Gdx.input.isTouched()){
+            if (Gdx.input.isTouched()) {
                 this.dispose();
                 game.setScreen(new Trebuchet(game));
             }
-        }else {
+        }
+        else {
             game.batch.draw(playButtonInactive, x, playy, playwidth, playheight);
         }
 
-        if(Gdx.input.getX() > x && Gdx.input.getX() < x + playwidth && Gdx.input.getY() > y - settingsy - playheight && Gdx.input.getY() < y - settingsy) {
+        if (Gdx.input.getX() > x && Gdx.input.getX() < x + playwidth && Gdx.input.getY() > y - settingsy - playheight && Gdx.input.getY() < y - settingsy) {
             game.batch.draw(settingsActive, x, settingsy, playwidth, playheight);
-            if (Gdx.input.isTouched()){
+            if (Gdx.input.isTouched()) {
                 this.dispose();
                 game.setScreen(new Setting(game));
             }
-        }else {
+        }
+        else {
             game.batch.draw(settings, x, settingsy, playwidth, playheight);
         }
 
-        if(Gdx.input.getX() > x && Gdx.input.getX() < x + exitwidth && Gdx.input.getY() > y - exity - exitheight && Gdx.input.getY() < y - exity) {
+        if (Gdx.input.getX() > x && Gdx.input.getX() < x + exitwidth && Gdx.input.getY() > y - exity - exitheight && Gdx.input.getY() < y - exity) {
             game.batch.draw(exitButtonActive, x, exity, exitwidth, exitheight);
-            if (Gdx.input.isTouched()){
+            if (Gdx.input.isTouched()) {
                 Gdx.app.exit();
             }
         }else {
             game.batch.draw(exitButtonInactive, x, exity, exitwidth, exitheight);
         }
 
-
-
         game.batch.end();
     }
 
     @Override
-    public void resize(int width, int height) {
-
-    }
+    public void resize(int width, int height) {}
 
     @Override
     public void pause() {}
@@ -120,7 +114,5 @@ public class mainMenu implements Screen {
     public void hide() {}
 
     @Override
-    public void dispose() {
-
-    }
+    public void dispose() {}
 }
