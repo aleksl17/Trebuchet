@@ -13,12 +13,13 @@ public class mainMenu implements Screen {
     private static final int playwidth = 200;
     private static final int playheight = 100;
     private static final int exity = 100;
-    private static final int playy = 250;
+    private static final int settingsy = 225;
+    private static final int playy = 350;
     private static final int x = TrebuchetGame.WIDTH / 2 - exitwidth / 2;
     private static final int y = TrebuchetGame.HEIGHT;
 
-    private boolean animasjon = true;
-    private int tid = 100;
+    public static boolean animasjon = true;
+    public static int tid = 100;
 
     TrebuchetGame game;
 
@@ -28,14 +29,19 @@ public class mainMenu implements Screen {
     Texture exitButtonActive;
     Texture exitButtonInactive;
     Texture mainplayer;
+    Texture settings;
+    Texture settingsActive;
 
     public mainMenu (TrebuchetGame game){
         this.game = game;
         head = new Texture("head.png");
+        mainplayer = new Texture("playerRollRight.png");
         playButtonActive = new Texture("playButtonActive.png");
         playButtonInactive = new Texture("playButtonInactive.png");
         exitButtonActive = new Texture("exitButtonActive.png");
         exitButtonInactive = new Texture("exitButtonInactive.png");
+        settings = new Texture("settings.png");
+        settingsActive = new Texture("settingsActive.png");
 
     }
 
@@ -64,7 +70,6 @@ public class mainMenu implements Screen {
         tid += 1;
         game.batch.draw(mainplayer,180,200,200,200);
 
-
         game.dispose();
         if(Gdx.input.getX() > x && Gdx.input.getX() < x + playwidth && Gdx.input.getY() > y - playy - playheight && Gdx.input.getY() < y - playy) {
             game.batch.draw(playButtonActive, x, playy, playwidth, playheight);
@@ -75,6 +80,17 @@ public class mainMenu implements Screen {
         }else {
             game.batch.draw(playButtonInactive, x, playy, playwidth, playheight);
         }
+
+        if(Gdx.input.getX() > x && Gdx.input.getX() < x + playwidth && Gdx.input.getY() > y - settingsy - playheight && Gdx.input.getY() < y - settingsy) {
+            game.batch.draw(settingsActive, x, settingsy, playwidth, playheight);
+            if (Gdx.input.isTouched()){
+                this.dispose();
+                game.setScreen(new Setting(game));
+            }
+        }else {
+            game.batch.draw(settings, x, settingsy, playwidth, playheight);
+        }
+
         if(Gdx.input.getX() > x && Gdx.input.getX() < x + exitwidth && Gdx.input.getY() > y - exity - exitheight && Gdx.input.getY() < y - exity) {
             game.batch.draw(exitButtonActive, x, exity, exitwidth, exitheight);
             if (Gdx.input.isTouched()){

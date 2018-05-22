@@ -10,6 +10,7 @@ import com.badlogic.gdx.maps.tiled.renderers.OrthogonalTiledMapRenderer;
 import com.mygdx.game.mainMenu;
 
 import static Entities.Player.map1;
+import static com.mygdx.game.Setting.graphicisHigh;
 
 public class TiledGameMap extends gamemap {
 
@@ -17,12 +18,24 @@ public class TiledGameMap extends gamemap {
     OrthogonalTiledMapRenderer tiledMapRenderer;
 
     public TiledGameMap(){
-        tiledMap = new TmxMapLoader().load("map.tmx");
+        if(graphicisHigh) {
+            tiledMap = new TmxMapLoader().load("map.tmx");
+        }else{
+            tiledMap = new TmxMapLoader().load("mapLow.tmx");
+        }
         if (map1 == 1){
-            tiledMap = new TmxMapLoader().load("map1.tmx");
+            if(graphicisHigh) {
+                tiledMap = new TmxMapLoader().load("map1.tmx");
+            }else{
+                tiledMap = new TmxMapLoader().load("map1Low.tmx");
+            }
         }
         if (map1 == 3){
-            tiledMap = new TmxMapLoader().load("map2.tmx");
+            if(graphicisHigh) {
+                tiledMap = new TmxMapLoader().load("map2.tmx");
+            }else{
+                tiledMap = new TmxMapLoader().load("map2Low.tmx");
+            }
         }
 
         tiledMapRenderer = new OrthogonalTiledMapRenderer(tiledMap);
