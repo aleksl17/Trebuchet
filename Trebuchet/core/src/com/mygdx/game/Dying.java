@@ -1,5 +1,7 @@
 package com.mygdx.game;
 
+import static Entities.Player.misteliv;
+
 public class Dying {
     private static boolean isDead;
     private static boolean tuch_lava;
@@ -10,10 +12,10 @@ public class Dying {
     private static long end;
 
     public Dying(){
-          isDead = false;
-          tuch_lava = false;
-          lives = 3;
-          mortal = true;
+        isDead = false;
+        tuch_lava = false;
+        lives = 3;
+        mortal = true;
 
     }
 
@@ -46,6 +48,7 @@ public class Dying {
 
     public static void got_hit(){
         if (mortal){
+            misteliv();
             setLives(getLives() - 1);
             if (getLives() == 0)
                 setDead(true);

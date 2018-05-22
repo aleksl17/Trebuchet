@@ -15,7 +15,7 @@ import static Entities.Player.map1;
 
 public abstract class gamemap {
     Dying d = new Dying();
-
+    long tid = 1000;
     protected ArrayList<Entity> entities;
 
     public gamemap() {
@@ -35,16 +35,21 @@ public abstract class gamemap {
         if (map1 == 3) {
             entities.add(new NPC(248, 370, this));
             entities.add(new ShootNPC(560, 530, this));
-            entities.add(new Cannonball(572, 536, this));
             entities.add(new NPC(870, 370, this));
             entities.add(new NPC(1200, 370, this));
+
         }
     }
 
     public void render(OrthographicCamera camera, SpriteBatch batch){
-        for (Entity entity : entities){
+        if (tid > 100 && map1 > 3) {
+            entities.add(new Cannonball(572, 536, this));
+            tid = 0;
+        }
+        for (Entity entity : entities) {
             entity.render(batch);
         }
+        tid++;
     }
 
     public void update(float delta){
@@ -69,10 +74,7 @@ public abstract class gamemap {
                     if (type != null && type.isCollidable()){
                         return true;}
                     else if (type != null && type.getId() == 4){
-                        if (Player.getx + TileType.TILE_SIZE > x && Player.getx + TileType.TILE_SIZE < x + getWidth() && Player.gety + TileType.TILE_SIZE > y && Player.gety + TileType.TILE_SIZE < y + getHeight()){
-                            Dying.setTuch_lava(true);
-                        }
-                        
+                        d.setTuch_lava(true);
                     }
                 }
             }

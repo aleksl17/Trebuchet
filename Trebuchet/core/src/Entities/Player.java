@@ -16,16 +16,23 @@ public class Player extends Entity {
     int roll = 0;
     int flame = 0;
     int timer = 0;
-    public static int map1;
+    private static long tid = 3000;
+    public static int map1 = 3;
     public static float getx;
     public static float gety;
     public static float getPlayerWidth;
+    private boolean isRight = true;
 
     public static Texture image;
 
     public Player (float x, float y, gamemap map) {
         super(x, y, EntityType.PLAYER, map);
         image = new Texture("playerRollRight.png");
+    }
+
+
+    public static void misteliv(){
+        tid = System.currentTimeMillis();
     }
 
     @Override
@@ -54,6 +61,7 @@ public class Player extends Entity {
 
             if (Gdx.input.isKeyPressed(Keys.LEFT)) {
                 moveX(-SPEED * deltaTime);
+                isRight = false;
 
                 if (roll > 10){
                     image = new Texture("playerRollLeft.png");
@@ -67,6 +75,7 @@ public class Player extends Entity {
 
             if (Gdx.input.isKeyPressed(Keys.RIGHT)) {
                 moveX(SPEED * deltaTime);
+                isRight = true;
 
                 if (roll > 10){
                     image = new Texture("playerRollRight.png");
@@ -91,20 +100,20 @@ public class Player extends Entity {
             getx = pos.x;
             gety = pos.y;
             getPlayerWidth = getWidth();
-
-            if (Dying.mortal == false){
-                //long tid = System.currentTimeMillis() + 2 * 1000;
-                if (roll > 10){
-                    image = new Texture("misteliv.png");
-                }
-
-
+            if ((System.currentTimeMillis() - tid) < 100 || (System.currentTimeMillis() - tid) > 500 && (System.currentTimeMillis() - tid) < 600 ){
+                image = new Texture("misteliv.png");
+            }else if(isRight){
+                image = new Texture("playerRollRight.png");
+            }else if(!isRight){
+                image = new Texture("playerRollLeft.png");
             }
         }
     }
 
+
     @Override
     public void render(SpriteBatch batch) {
+
         batch.draw(image, pos.x, pos.y, getWidth(), getHeight());
     }
 }

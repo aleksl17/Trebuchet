@@ -20,22 +20,17 @@ public class Cannonball extends Entity {
     public void update(float deltaTime, float gravity){
         super.update(deltaTime, gravity);
 
-        this.velocityY = 0;
+        this.velocityY -=  deltaTime;
         moveX(-SPEED * deltaTime);
 
-        /*
-        if (ShootNPC.facing == 0) {
-            moveX(-SPEED * deltaTime);
-        }
-        if (ShootNPC.facing == 1) {
-            moveX(SPEED * deltaTime);
-        }
-        */
     }
 
     @Override
     public void render(SpriteBatch batch) {
-        batch.draw(image, pos.x, pos.y, getWidth(), getHeight());
+        if (pos.x > 5) {
+            batch.draw(image, pos.x, pos.y, getWidth(), getHeight());
+        }
+
         for (float i = 0; i < Player.getPlayerWidth; i++){
             if (Player.getx + i > pos.x && Player.getx + i < pos.x + getWidth() && Player.gety + i > pos.y && Player.gety + i < pos.y + getHeight()){
                 Dying.got_hit();
