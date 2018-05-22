@@ -68,8 +68,11 @@ public abstract class gamemap {
                     TileType type = getTileTypeByCoordinate(layer, col, row);
                     if (type != null && type.isCollidable()){
                         return true;}
-                        else if (type != null && type.getId() == 4){
-                        d.setTuch_lava(true);
+                    else if (type != null && type.getId() == 4){
+                        if (Player.getx + TileType.TILE_SIZE > x && Player.getx + TileType.TILE_SIZE < x + getWidth() && Player.gety + TileType.TILE_SIZE > y && Player.gety + TileType.TILE_SIZE < y + getHeight()){
+                            Dying.setTuch_lava(true);
+                        }
+                        
                     }
                 }
             }
