@@ -6,7 +6,7 @@ public class Dying {
 
     private static int lives;
 
-    private static boolean mortal;
+    public static boolean mortal;
     private static long end;
 
     public Dying(){
@@ -51,7 +51,6 @@ public class Dying {
                 setDead(true);
             mortal = false;
             end = System.currentTimeMillis() + 2 * 1000;
-            System.out.print("got hit\n");
         }
         else if (!mortal){
             if (System.currentTimeMillis() > end){

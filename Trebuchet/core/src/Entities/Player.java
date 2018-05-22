@@ -77,24 +77,34 @@ public class Player extends Entity {
                 roll += 1;
                 if (roll == 20){roll = 0;}
             }
+
+            if(pos.x > 1600 - 30){
+                if (map1 == 2){
+                    map1 = 3;
+                }
+                else if(map1 == 4){
+                    map1 = 5;
+
+                }
+                else{map1 = 1;}
+            }
+            getx = pos.x;
+            gety = pos.y;
+            getPlayerWidth = getWidth();
+
+            if (Dying.mortal == false){
+                //long tid = System.currentTimeMillis() + 2 * 1000;
+                if (roll > 10){
+                    image = new Texture("misteliv.png");
+                }
+
+
+            }
         }
     }
 
     @Override
     public void render(SpriteBatch batch) {
         batch.draw(image, pos.x, pos.y, getWidth(), getHeight());
-        if(pos.x > 1600 - 30){
-            if (map1 == 2){
-                map1 = 3;
-            }
-            else if(map1 == 4){
-                map1 = 5;
-
-            }
-            else{map1 = 1;}
-        }
-        getx = pos.x;
-        gety = pos.y;
-        getPlayerWidth = getWidth();
     }
 }
