@@ -19,22 +19,22 @@ public class TiledGameMap extends gamemap {
 
     public TiledGameMap(){
         if(graphicisHigh) {
-            tiledMap = new TmxMapLoader().load("map.tmx");
+            tiledMap = new TmxMapLoader().load("maps/map.tmx");
         }else{
-            tiledMap = new TmxMapLoader().load("mapLow.tmx");
+            tiledMap = new TmxMapLoader().load("maps/mapLow.tmx");
         }
         if (map1 == 1){
             if(graphicisHigh) {
-                tiledMap = new TmxMapLoader().load("map1.tmx");
+                tiledMap = new TmxMapLoader().load("maps/map1.tmx");
             }else{
-                tiledMap = new TmxMapLoader().load("map1Low.tmx");
+                tiledMap = new TmxMapLoader().load("maps/map1Low.tmx");
             }
         }
         if (map1 == 3){
             if(graphicisHigh) {
-                tiledMap = new TmxMapLoader().load("map2.tmx");
+                tiledMap = new TmxMapLoader().load("maps/map2.tmx");
             }else{
-                tiledMap = new TmxMapLoader().load("map2Low.tmx");
+                tiledMap = new TmxMapLoader().load("maps/map2Low.tmx");
             }
         }
 

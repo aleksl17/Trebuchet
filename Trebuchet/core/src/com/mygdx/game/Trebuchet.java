@@ -31,8 +31,8 @@ public class Trebuchet implements Screen {
 
     public Trebuchet(TrebuchetGame game) {
         this.game = game;
-        full_hearth = new Texture("full_hearth.png");
-        empty_hearth = new Texture("empty_hearth.png");
+        full_hearth = new Texture("ui/full_hearth.png");
+        empty_hearth = new Texture("ui/empty_hearth.png");
     }
 
     @Override

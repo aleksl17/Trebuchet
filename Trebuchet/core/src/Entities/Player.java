@@ -27,7 +27,7 @@ public class Player extends Entity {
 
     public Player (float x, float y, gamemap map) {
         super(x, y, EntityType.PLAYER, map);
-        image = new Texture("playerRollRight.png");
+        image = new Texture("entities/playerRollRight.png");
     }
 
 
@@ -40,10 +40,10 @@ public class Player extends Entity {
 
         if (Dying.isTuch_lava()){
             if (flame > 10){
-                image = new Texture("onflame_1.png");
+                image = new Texture("entities/onflame_1.png");
             }
             else {
-                image = new Texture("onfflame2.png");
+                image = new Texture("entities/onfflame2.png");
             }
             flame += 1;
             timer += 1;
@@ -64,10 +64,10 @@ public class Player extends Entity {
                 isRight = false;
 
                 if (roll > 10){
-                    image = new Texture("playerRollLeft.png");
+                    image = new Texture("entities/playerRollLeft.png");
                 }
                 else {
-                    image = new Texture("playerRollLeft1.png");
+                    image = new Texture("entities/playerRollLeft1.png");
                 }
                 roll += 1;
                 if (roll == 20){roll = 0;}
@@ -78,10 +78,10 @@ public class Player extends Entity {
                 isRight = true;
 
                 if (roll > 10){
-                    image = new Texture("playerRollRight.png");
+                    image = new Texture("entities/playerRollRight.png");
                 }
                 else {
-                    image = new Texture("playerRollRight1.png");
+                    image = new Texture("entities/playerRollRight1.png");
                 }
                 roll += 1;
                 if (roll == 20){roll = 0;}
@@ -101,11 +101,11 @@ public class Player extends Entity {
             gety = pos.y;
             getPlayerWidth = getWidth();
             if ((System.currentTimeMillis() - tid) < 100 || (System.currentTimeMillis() - tid) > 500 && (System.currentTimeMillis() - tid) < 600 ){
-                image = new Texture("misteliv.png");
+                image = new Texture("entities/misteliv.png");
             }else if(isRight){
-                image = new Texture("playerRollRight.png");
+                image = new Texture("entities/playerRollRight.png");
             }else if(!isRight){
-                image = new Texture("playerRollLeft.png");
+                image = new Texture("entities/playerRollLeft.png");
             }
         }
     }

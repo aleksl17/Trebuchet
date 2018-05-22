@@ -13,7 +13,7 @@ public class FollowNPC extends Entity {
 
     public FollowNPC(float x, float y, gamemap map){
         super(x, y, EntityType.FollowNPC, map);
-        image = new Texture("FollowNPCLeft.png");
+        image = new Texture("entities/followNPCLeft.png");
     }
 
     @Override
@@ -21,11 +21,11 @@ public class FollowNPC extends Entity {
         super.update(deltaTime, gravity);
 
         if (Player.getx > (pos.x-100) && Player.getx < (pos.x)) {
-            image = new Texture("FollowNPCLeft.png");
+            image = new Texture("entities/followNPCLeft.png");
             moveX(-SPEED * deltaTime);
         }
         if (Player.getx > (pos.x) && Player.getx < (pos.x+64)) {
-            image = new Texture("FollowNPCRight.png");
+            image = new Texture("entities/followNPCRight.png");
             moveX(SPEED * deltaTime);
         }
     }

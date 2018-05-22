@@ -34,14 +34,14 @@ public class mainMenu implements Screen {
 
     public mainMenu (TrebuchetGame game){
         this.game = game;
-        head = new Texture("head.png");
-        mainplayer = new Texture("playerRollRight.png");
-        playButtonActive = new Texture("playButtonActive.png");
-        playButtonInactive = new Texture("playButtonInactive.png");
-        exitButtonActive = new Texture("exitButtonActive.png");
-        exitButtonInactive = new Texture("exitButtonInactive.png");
-        settings = new Texture("settings.png");
-        settingsActive = new Texture("settingsActive.png");
+        head = new Texture("ui/head.png");
+        mainplayer = new Texture("entities/playerRollRight.png");
+        playButtonActive = new Texture("ui/playButtonActive.png");
+        playButtonInactive = new Texture("ui/playButtonInactive.png");
+        exitButtonActive = new Texture("ui/exitButtonActive.png");
+        exitButtonInactive = new Texture("ui/exitButtonInactive.png");
+        settings = new Texture("ui/settings.png");
+        settingsActive = new Texture("ui/settingsActive.png");
 
     }
 
@@ -59,10 +59,10 @@ public class mainMenu implements Screen {
         game.batch.draw(head,400,500,800,200);
         if (tid == 100) {
             if (animasjon == true) {
-                mainplayer = new Texture("playerRollRight.png");
+                mainplayer = new Texture("entities/playerRollRight.png");
                 animasjon = false;
             } else {
-                mainplayer = new Texture("playerRollRight1.png");
+                mainplayer = new Texture("entities/playerRollRight1.png");
                 animasjon = true;
             }
             tid = 0;

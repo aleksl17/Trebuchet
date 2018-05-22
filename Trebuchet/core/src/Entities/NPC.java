@@ -14,7 +14,7 @@ public class NPC extends Entity {
 
     public NPC(float x, float y, gamemap map){
         super(x, y, EntityType.NPC, map);
-        image = new Texture("EnemyCatapultRight.png");
+        image = new Texture("entities/enemyCatapultRight.png");
     }
 
     @Override
@@ -23,11 +23,11 @@ public class NPC extends Entity {
 
 
        if (move < 100) {
-           image = new Texture("EnemyCatapultLeft.png");
+           image = new Texture("entities/enemyCatapultLeft.png");
            moveX(-SPEED * deltaTime);
        }
        else {
-           image = new Texture("EnemyCatapultRight.png");
+           image = new Texture("entities/enemyCatapultRight.png");
            moveX(SPEED * deltaTime);
        }
        move += 1;

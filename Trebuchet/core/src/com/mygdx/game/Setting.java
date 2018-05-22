@@ -32,16 +32,15 @@ public class Setting implements Screen {
 
     public Setting(TrebuchetGame game) {
         this.game = game;
-        head = new Texture("head.png");
-        mainplayer = new Texture("playerRollRight.png");
-        graphic = new Texture("Graphics.png");
-        High = new Texture("High.png");
-        HighActive = new Texture("HighActive.png");
-        Low = new Texture("Low.png");
-        LowActive = new Texture("LowActive.png");
-        Mainmenu = new Texture("Mainmenu.png");
-        MainmenuActive = new Texture("MainmenuActive.png");
-
+        head = new Texture("ui/head.png");
+        mainplayer = new Texture("entities/playerRollRight.png");
+        graphic = new Texture("ui/graphics.png");
+        High = new Texture("ui/high.png");
+        HighActive = new Texture("ui/highActive.png");
+        Low = new Texture("ui/low.png");
+        LowActive = new Texture("ui/lowActive.png");
+        Mainmenu = new Texture("ui/mainmenu.png");
+        MainmenuActive = new Texture("ui/mainmenuActive.png");
     }
 
     @Override
@@ -58,10 +57,10 @@ public class Setting implements Screen {
         game.batch.draw(head,400,500,800,200);
         if (tid == 100) {
             if (animasjon) {
-                mainplayer = new Texture("playerRollRight.png");
+                mainplayer = new Texture("entities/playerRollRight.png");
                 animasjon = false;
             } else {
-                mainplayer = new Texture("playerRollRight1.png");
+                mainplayer = new Texture("entities/playerRollRight1.png");
                 animasjon = true;
             }
             tid = 0;
@@ -89,14 +88,14 @@ public class Setting implements Screen {
                 if(graphicisHigh) {
                     graphicisHigh = false;
                     try {
-                        Thread.sleep(100);
+                        Thread.sleep(200);
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
                 }else{
                     graphicisHigh = true;
                     try {
-                        Thread.sleep(100);
+                        Thread.sleep(200);
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }

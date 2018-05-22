@@ -27,9 +27,9 @@ public class GameEnd implements Screen {
 
     public GameEnd(TrebuchetGame game){
         this.game = game;
-        Victory = new Texture("Victory.png");
-        Mainmenu = new Texture("Mainmenu.png");
-        MainmenuActive = new Texture("MainmenuActive.png");
+        Victory = new Texture("ui/victory.png");
+        Mainmenu = new Texture("ui/mainmenu.png");
+        MainmenuActive = new Texture("ui/mainmenuActive.png");
         try {
             fileReader = new FileReader("Highscore.txt");
             bufferedReader = new BufferedReader(fileReader);

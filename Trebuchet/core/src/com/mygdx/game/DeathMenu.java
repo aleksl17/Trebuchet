@@ -33,11 +33,11 @@ public class DeathMenu implements Screen {
 
     public DeathMenu(TrebuchetGame game){
         this.game = game;
-        you_died = new Texture("you_died.png");
-        Mainmenu = new Texture("Mainmenu.png");
-        MainmenuActive = new Texture("MainmenuActive.png");
-        exitButtonActive = new Texture("exitButtonActive.png");
-        exitButtonInactive = new Texture("exitButtonInactive.png");
+        you_died = new Texture("ui/you_died.png");
+        Mainmenu = new Texture("ui/mainmenu.png");
+        MainmenuActive = new Texture("ui/mainmenuActive.png");
+        exitButtonActive = new Texture("ui/exitButtonActive.png");
+        exitButtonInactive = new Texture("ui/exitButtonInactive.png");
     }
 
     @Override

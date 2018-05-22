@@ -13,7 +13,7 @@ public class Cannonball extends Entity {
 
     public Cannonball(float x, float y, gamemap map){
         super(x, y, EntityType.Cannonball, map);
-        image = new Texture("Cannonball.png");
+        image = new Texture("entities/cannonball.png");
     }
 
     @Override
