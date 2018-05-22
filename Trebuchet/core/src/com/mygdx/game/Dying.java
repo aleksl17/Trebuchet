@@ -6,7 +6,7 @@ public class Dying {
     private static boolean isDead;
     private static boolean tuch_lava;
 
-    private static int lives;
+    private static int lives = 3;
 
     public static boolean mortal;
     private static long end;
@@ -14,7 +14,6 @@ public class Dying {
     public Dying(){
         isDead = false;
         tuch_lava = false;
-        lives = 3;
         mortal = true;
 
     }

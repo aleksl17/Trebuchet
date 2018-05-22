@@ -17,7 +17,7 @@ public class Player extends Entity {
     int flame = 0;
     int timer = 0;
     private static long tid = 3000;
-    public static int map1 = 3;
+    public static int map1;
     public static float getx;
     public static float gety;
     public static float getPlayerWidth;
@@ -38,7 +38,7 @@ public class Player extends Entity {
     @Override
     public void update(float deltaTime, float gravity) {
 
-        if (d.isTuch_lava()){
+        if (Dying.isTuch_lava()){
             if (flame > 10){
                 image = new Texture("onflame_1.png");
             }
@@ -113,7 +113,6 @@ public class Player extends Entity {
 
     @Override
     public void render(SpriteBatch batch) {
-
         batch.draw(image, pos.x, pos.y, getWidth(), getHeight());
     }
 }

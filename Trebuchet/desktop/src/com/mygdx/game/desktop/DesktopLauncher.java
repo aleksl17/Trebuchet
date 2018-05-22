@@ -14,6 +14,5 @@ public class DesktopLauncher {
 		config.height = TrebuchetGame.HEIGHT;
 		config.resizable = true;
 		new LwjglApplication(new TrebuchetGame(), config);
-
 	}
 }
